@@ -278,7 +278,7 @@ a{
     right: 0;
     width: 160px;
     height: 160px;
-    background-image: url(/assets/img/Vector\ 3\ \(1\).png);
+    background-image: url(./assets/img/Vector\ 3\ \(1\).png);
 }
  .angle img{
      width: 50px;
@@ -497,7 +497,7 @@ a{
 }
 
 .form .mail{
-    background-image: url(/assets/img/Rectangle\ 17.jpg);
+    background-image: url(./assets/img/Rectangle\ 17.jpg);
     width: 55%;
     height: 548px;
     float: left;
