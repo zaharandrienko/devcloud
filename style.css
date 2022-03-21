@@ -278,7 +278,7 @@ a{
     right: 0;
     width: 160px;
     height: 160px;
-    background-image: url(../assets/img/3.png);
+    background-image: url(./assets/img/3.png);
 }
  .angle img{
      width: 50px;
