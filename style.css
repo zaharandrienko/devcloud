@@ -233,7 +233,6 @@ a{
     width: 1204px;
     height: 552px;
     padding: 20px;
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%237B61FFFF' stroke-width='1' stroke-dasharray='10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
 }
 
 .service{
@@ -278,7 +277,6 @@ a{
     right: 0;
     width: 160px;
     height: 160px;
-    background-image: url(./assets/img/Vector\ 3\ \(1\).png);
 }
  .angle img{
      width: 50px;
@@ -497,7 +495,7 @@ a{
 }
 
 .form .mail{
-    background-image: url(./assets/img/Rectangle\ 17.jpg);
+    /* background-image: url(./assets/img/Rectangle\ 17.jpg); */
     width: 55%;
     height: 548px;
     float: left;
