@@ -60,7 +60,7 @@
 
 
 
-    <div class="container">
+    <div class="containerNumbers" id="containerScroll">
         <div class="numbers">
             <div class="number">
                 <h1>98%</h1>
@@ -269,13 +269,20 @@
                         автоматического
                         сбора данных из ситем.</p>
                 </div>
-                <div class="service2 lustService2">
+                <div class="service2">
                     <img src="./assets/img/austin-distel-DfjJMVhwH_8-unsplash 1.png">
                     <h1>Финансы</h1>
                     <p>Внедрение банковских систем для интеграции с международными системами денежных переводов, систем
                         согласования бюджетных запросов и оперативного контроля использования бюджета, системы
                         автоматизации
                         бизнес- процессов кредитования.</p>
+                </div>
+                <div class="service2">
+                    <img src="./assets/img/christina-wocintechchat-com-rg1y72eKw6o-unsplash 2.jpg">
+                    <h1>Обучение</h1>
+                    <p>Корпоративное решение для организаций, осуществляющих обучение и тестирование персонала.
+                        Веб-приложение для администрирования обучения сотрудников - с возможностью создания учебных
+                        курсов, практических и тестовых заданий, отслеживания прогресса учеников.</p>
                 </div>
             </div>
         </div>
@@ -378,14 +385,13 @@
 
             window.addEventListener('scroll', function () {
                 var toolbarBack = document.getElementsByClassName("toolbar");
-                if(pageYOffset > 100){
+                if (pageYOffset > 200) {
                     toolbarBack[0].classList.add('scroll');
-                }else{
+                } else {
                     toolbarBack[0].classList.remove('scroll');
                 }
-                
-            });
 
+            });
 
 
 
@@ -404,6 +410,7 @@
                     bar3[0].classList.add('rotate2');
                     bar2[0].classList.add('opacity');
                     toolbarLogo[0].classList.add('opacity');
+                    toolbarLogo[1].classList.add('opacity');
                     menu[0].style.display = "block";
                 }
                 else {
@@ -412,6 +419,7 @@
                     bar3[0].classList.remove('rotate2');
                     bar2[0].classList.remove('opacity');
                     toolbarLogo[0].classList.remove('opacity');
+                    toolbarLogo[1].classList.remove('opacity');
                     menu[0].style.display = "none";
 
                 }
