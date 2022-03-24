@@ -14,7 +14,7 @@ a{
 }
 
 .toolbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -22,7 +22,7 @@ a{
     display: flex;
     align-items: center;
     background-color: #29a28c25;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
     /* backdrop-filter: blur(2px); */
     float: left;
     font-size: 18px;
