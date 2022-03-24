@@ -17,16 +17,17 @@
 
 <body>
     <header class="toolbar">
-        <img src="./assets/img/Frame 44 (1).png" />
-        <span>DEVCLOUD SOLUTIONS</span>
-        <div class="stack">
+        <img class="toolbarLogo" src="./assets/img/Frame 44 (1).png" />
+        <span class="toolbarLogo">DEVCLOUD SOLUTIONS</span>
+        <div class="stack" onclick="Menu()">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
         <ul class="menu">
             <li><a href="">Главная</a></li>
-            <li><a href=""><img style="width: 14px;height: 7px;position: absolute;top:8px;left: 150px;" src="./assets/img/Vector 30.png">Услуги</a></li>
+            <li><a href=""><img style="width: 14px;height: 7px;position: absolute;top:8px;left: 150px;"
+                        src="./assets/img/Vector 30.png">Услуги</a></li>
             <li><a href="">Как мы работаем</a></li>
             <li><a href="">Портфолио</a></li>
             <li><a href=""> О нас</a></li>
@@ -98,7 +99,8 @@
     </div>
 
     <div class="container">
-        <h1 class="title">Основные услуги</h1>
+        <div class="containerSlider">
+            <h1 class="title">Основные услуги</h1>
         <div class="services">
             <div class="service">
                 <div class="angle">
@@ -145,6 +147,11 @@
                 <a href="">Узнать больше</a>
             </div>
         </div>
+        <div class="control">
+            <div class="controller" onclick="Control(0)"></div>
+            <div class="controller" onclick="Control(1)"></div>
+            <div class="controller lustController" onclick="Control(2)"></div>
+        </div>
     </div>
 
     <div class="container">
@@ -166,16 +173,61 @@
         <h1 class="title">Наш процесс работы</h1>
         <div class="about3">
             <ul class="ind">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
+                <li class="index" onclick="Active(0)">1</li>
+                <li class="index" onclick="Active(1)">2</li>
+                <li class="index" onclick="Active(2)">3</li>
+                <li class="index" onclick="Active(3)">4</li>
+                <li class="index" onclick="Active(4)">5</li>
+                <li class="index" onclick="Active(5)">6</li>
             </ul>
-            <img src="./assets/img/leon-bzqU01v-G54-unsplash 1.png">
+            <img class="img3" src="./assets/img/leon-bzqU01v-G54-unsplash 1.png">
             <div class="text3">
                 <h1>1. Мастерская открытий</h1>
+                <p>Мы придаем первостепенное значение пониманию и документированию входов, предпочтений клиентов,
+                    дизайна и брендов. И проясните все открытые моменты, чтобы получить точное и ясное представление о
+                    целях как клиентов, так и проекта. Мы работаем в рамках совместного подхода с участием
+                    заинтересованных сторон, чтобы согласовать бизнес-процессы.</p>
+                <a href="">Узнать больше</a>
+            </div>
+            <img class="img3" src="./assets/img/leon-bzqU01v-G54-unsplash 1.png">
+            <div class="text3">
+                <h1>2. Мастерская открытий</h1>
+                <p>Мы придаем первостепенное значение пониманию и документированию входов, предпочтений клиентов,
+                    дизайна и брендов. И проясните все открытые моменты, чтобы получить точное и ясное представление о
+                    целях как клиентов, так и проекта. Мы работаем в рамках совместного подхода с участием
+                    заинтересованных сторон, чтобы согласовать бизнес-процессы.</p>
+                <a href="">Узнать больше</a>
+            </div>
+            <img class="img3" src="./assets/img/leon-bzqU01v-G54-unsplash 1.png">
+            <div class="text3">
+                <h1>3. Мастерская открытий</h1>
+                <p>Мы придаем первостепенное значение пониманию и документированию входов, предпочтений клиентов,
+                    дизайна и брендов. И проясните все открытые моменты, чтобы получить точное и ясное представление о
+                    целях как клиентов, так и проекта. Мы работаем в рамках совместного подхода с участием
+                    заинтересованных сторон, чтобы согласовать бизнес-процессы.</p>
+                <a href="">Узнать больше</a>
+            </div>
+            <img class="img3" src="./assets/img/leon-bzqU01v-G54-unsplash 1.png">
+            <div class="text3">
+                <h1>4. Мастерская открытий</h1>
+                <p>Мы придаем первостепенное значение пониманию и документированию входов, предпочтений клиентов,
+                    дизайна и брендов. И проясните все открытые моменты, чтобы получить точное и ясное представление о
+                    целях как клиентов, так и проекта. Мы работаем в рамках совместного подхода с участием
+                    заинтересованных сторон, чтобы согласовать бизнес-процессы.</p>
+                <a href="">Узнать больше</a>
+            </div>
+            <img class="img3" src="./assets/img/leon-bzqU01v-G54-unsplash 1.png">
+            <div class="text3">
+                <h1>5. Мастерская открытий</h1>
+                <p>Мы придаем первостепенное значение пониманию и документированию входов, предпочтений клиентов,
+                    дизайна и брендов. И проясните все открытые моменты, чтобы получить точное и ясное представление о
+                    целях как клиентов, так и проекта. Мы работаем в рамках совместного подхода с участием
+                    заинтересованных сторон, чтобы согласовать бизнес-процессы.</p>
+                <a href="">Узнать больше</a>
+            </div>
+            <img class="img3" src="./assets/img/leon-bzqU01v-G54-unsplash 1.png">
+            <div class="text3">
+                <h1>6. Мастерская открытий</h1>
                 <p>Мы придаем первостепенное значение пониманию и документированию входов, предпочтений клиентов,
                     дизайна и брендов. И проясните все открытые моменты, чтобы получить точное и ясное представление о
                     целях как клиентов, так и проекта. Мы работаем в рамках совместного подхода с участием
@@ -296,6 +348,110 @@
         </div>
         <span class="lustTitle">© Devcloud Solutions, Inc. 2021. We love our users!</span>
     </footer>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        Active(0);
+        Control(1);
+
+        var x = true;
+
+
+        function Menu() {
+            var toolbarLogo = document.getElementsByClassName("toolbarLogo");
+            var toolbar = document.getElementsByClassName("toolbar");
+            var menu = document.getElementsByClassName("menu");
+            var bar1 = document.getElementsByClassName("bar1");
+            var bar2 = document.getElementsByClassName("bar2");
+            var bar3 = document.getElementsByClassName("bar3");
+
+
+            if(x === true){
+                toolbar[0].classList.add('blackMenu');
+                bar1[0].classList.add('rotate1');
+                bar3[0].classList.add('rotate2');
+                bar2[0].classList.add('opacity');
+                toolbarLogo[0].classList.add('opacity');
+                menu[0].style.display = "block";
+            }
+            else{
+                toolbar[0].classList.remove('blackMenu');
+                bar1[0].classList.remove('rotate1');
+                bar3[0].classList.remove('rotate2');
+                bar2[0].classList.remove('opacity');
+                toolbarLogo[0].classList.remove('opacity');
+                menu[0].style.display = "none";
+
+            }
+
+            x = !x
+        }
+
+
+
+
+        
+
+        function Active(n) {
+            var activeIndex = n
+            var index = document.getElementsByClassName("index");
+            var img = document.getElementsByClassName("img3");
+            var text = document.getElementsByClassName("text3");
+
+
+            var i;
+            for (i = 0; i < index.length; i++) {
+                index[i].classList.remove('active');
+            }
+            index[activeIndex].classList.add('active')
+
+
+            for (i = 0; i < img.length; i++) {
+                img[i].style.display = "none";
+            }
+            img[activeIndex].style.display = "block";
+
+
+            for (i = 0; i < text.length; i++) {
+                text[i].style.display = "none";
+            }
+            text[activeIndex].style.display = "block";
+        }
+
+        function Control(n) {
+            var services = document.getElementsByClassName("services");
+            var controller = document.getElementsByClassName("controller");
+
+            var i
+            for (i = 0; i < controller.length; i++) {
+                controller[i].classList.remove('activeController');
+            }
+            controller[n].classList.add('activeController');
+
+
+            if(n == 0){
+               services[0].classList.add('left');
+               services[0].classList.remove('right');
+            }
+            if(n == 1){
+               services[0].classList.remove('left');
+               services[0].classList.remove('right');
+            }
+            if(n == 2){
+               services[0].classList.remove('left');
+               services[0].classList.add('right');
+            }
+        }
+
+    </script>
 </body>
 
 </html>

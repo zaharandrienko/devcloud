@@ -24,10 +24,10 @@ a{
     background-color: #29a28c25;
     backdrop-filter: blur(2px);
     /* backdrop-filter: blur(2px); */
-    color: white;
     float: left;
     font-size: 18px;
     z-index: 10000;
+    transition: all 300ms;
 }
 .stack{
     display: none;
@@ -39,6 +39,7 @@ a{
     float: left;
 }
 .toolbar span {
+    color: white;
     float: left;
     font-weight: bold;
 }
@@ -73,6 +74,7 @@ a{
     height: fit-content;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 
@@ -233,7 +235,7 @@ a{
     width: 1204px;
     height: 552px;
     padding: 20px;
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%237B61FFFF' stroke-width='1' stroke-dasharray='10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    transition: all 300ms;
 }
 
 .service{
@@ -278,7 +280,7 @@ a{
     right: 0;
     width: 160px;
     height: 160px;
-    background-image: url(./assets/img/3.png);
+    background-image: url(./assets/img/V3.png);
 }
  .angle img{
      width: 50px;
@@ -286,7 +288,9 @@ a{
      float: right;
      margin: 17px;
  }
-
+.control{
+    display: none;
+}
 
 .about2{
     width: 90%;
@@ -356,7 +360,9 @@ a{
     margin: 0;
 }
 
-.ind li{
+
+.index{
+    cursor: pointer;
     text-align: center;
     padding: 15px 0px 25px 0;
     height: 10px;
@@ -371,11 +377,16 @@ a{
 .titleImg{
     margin-top: 25px;
 }
-.about3 .text3{
+.text3{
+    display: none;
     position: relative;
     text-align: left;
     margin-left: 60px;
 }
+.img3{
+    display: none;
+}
+
 .text3 h1{
     font-size: 36px;
     font-weight: 400;
@@ -409,7 +420,6 @@ a{
     height: 552px;
     padding: 20px;
     overflow: hidden;
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%237B61FFFF' stroke-width='1' stroke-dasharray='10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
 }
 .service2{
     width: 306px;
@@ -695,6 +705,23 @@ textarea:focus, input:focus{
 
 
 
+.active{
+    color: #29A28C;
+    border:1px #29A28C solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -706,6 +733,11 @@ textarea:focus, input:focus{
 @media screen and (max-width: 1100px) {
     .menu{
         display: none;
+        padding-top: 10%;
+    }
+    .menu li{
+        width: 100%;
+        margin-bottom: 20px;
     }
     .toolbar img {
         margin: 0 11px 0 15px;
@@ -716,13 +748,53 @@ textarea:focus, input:focus{
         display: block;
         width: 26px;
         height: 20px;
+        cursor: pointer;
     }
     .bar1,.bar2,.bar3{
+        position: absolute;
         width: 26px;
         height: 2px;
-        margin-bottom: 6px;
         background-color: #ffffff;
         border-radius: 1px;
+        opacity: 1.0;
+        transition: all 300ms;
+    }
+    .bar1{
+        top:0px;
+        transform: rotate(0deg);
+        transition: all 300ms;
+    }
+    .bar2{
+        top:8px;
+    }
+    .bar3{
+        top:16px;
+        transform: rotate(0deg);
+        transition: all 300ms;
+    }
+    .rotate1{
+        transform: rotate(45deg);
+        top: 8px;
+        transition: all 300ms;
+    }
+    .rotate2{
+        transform: rotate(-45deg);
+        top: 8px;
+        transition: all 300ms;
+    }
+    .opacity{
+        opacity: 0.0;
+        color: rgba(255, 0, 0, 0);
+        transition: all 300ms;
+    }
+    .blackMenu{
+        padding-top: 20px;
+        position: fixed;
+        display: block;
+        z-index: 1000000;
+        height: 100%;
+        background-color: #000000c0;
+        transition: all 300ms;
     }
     .titleLink h1{
         font-size: 40px;
@@ -772,14 +844,48 @@ textarea:focus, input:focus{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     
-    .ind li{
+    .index{
         margin-left: 15%;
         margin-right: 15%;
-        padding: 15px 0px 25px 0;
         height: 10px;
-        border: 1px #000000 solid;
     }
-    
+    .containerSlider{
+        width: 800%;
+        margin-left: -350%;
+    }
+    .services{
+        margin: 0 auto;
+    }
+    .control{
+        display: block;
+        width: 234px;
+        height: 2px;
+        margin: 86px auto 0 auto;
+    }
+    .controller{
+        width: 70px;
+        height: 2px;
+        margin-right: 8px;
+        float: left;
+        background-color: #B9B9B9;
+        cursor: pointer;
+        transition: all 300ms;
+    }
+    .lustController{
+        margin-right: 0;
+    }
+    .activeController{
+        background-color: #000000;
+        transition: all 300ms;
+    }
+    .left{
+        padding-left: 885px;
+        transition: all 300ms;
+    }
+    .right{
+        padding-right: 885px;
+        transition: all 300ms;
+    }
     .about3 img{
         margin-top: 50px;
         margin-left: 0px;
