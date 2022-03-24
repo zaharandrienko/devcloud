@@ -800,8 +800,19 @@ textarea:focus, input:focus{
         background-color: #000000c0;
         transition: all 300ms;
     }
+    .video{
+        width: 130%;
+        margin: 0 auto;
+    }
+    .titleLink{
+        margin-top: 20%;
+    }
     .titleLink h1{
-        font-size: 40px;
+        font-size: 4.5vw;
+    }
+    .titleLink button{
+        margin-top: 3%;
+        font-size: 1.8vw;
     }
     .numbers{
         grid-template-columns: 1fr 1fr;
