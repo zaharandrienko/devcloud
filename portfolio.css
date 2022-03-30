@@ -1,0 +1,67 @@
+.portfolio{
+    width: 90%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+.case{
+    height: 362px;
+    background-color: rgb(95, 95, 95);
+    overflow: hidden;
+}
+.portfolioText{
+    float: right;
+    width: 42%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.801);
+    color: rgb(255, 255, 255);
+    padding: 0 4%;
+}
+.portfolioText h1{
+    font-size: 1.5vw;
+    margin-top: 25px;
+}
+
+.portfolioText p{
+    font-size: 0.9vw;
+    margin-top: 25px;
+}
+.portfolioText button{
+    background-color: rgb(255, 255, 255);
+    border: 1px white solid;
+    border-radius: 15px;
+    font-size: 1.2vw;
+    padding: 5px 50px;
+    margin-top: 30px;
+}
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .portfolio{
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        width: 100%;
+        margin-left: 0;
+    }
+    .case{
+        height: fit-content;
+    }
+    .portfolioText h1{
+        font-size: 3.2vw;
+        margin-top: 25px;
+    }
+    
+    .portfolioText p{
+        font-size: 1.9vw;
+        margin-top: 25px;
+    }
+    .portfolioText button{
+        margin-bottom: 60px;
+        font-size: 2.2vw;
+    }
+}

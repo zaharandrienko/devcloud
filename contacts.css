@@ -1,0 +1,25 @@
+.contacts{
+    width: 80%;
+    height: fit-content;
+    margin: 230px 10% 200px 10%;
+}
+
+.contacts img{
+    width: 60%;
+    height: auto;
+    float: left;
+}
+.contactsText{
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 50px;
+    float: left;
+}
+.contactsText p{
+    font-size: 1vw;
+    text-transform: uppercase;
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    margin-top: 15%;
+}
