@@ -1,7 +1,7 @@
-Active(0);
-Control(1);
+
 
 var x = true;
+var y = true;
 
 window.addEventListener('scroll', function () {
     var toolbarBack = document.getElementsByClassName("toolbar");
@@ -49,6 +49,20 @@ function Menu() {
 
 
 
+function DownMenuActive(){
+    var downMenu = document.getElementsByClassName("downMenu");
+
+
+    if(y == true){
+        downMenu[0].classList.add('downMenuActive')
+    }
+    else{
+        downMenu[0].classList.remove('downMenuActive')
+    }
+
+    y = !y
+}
+
 
 
 
@@ -63,7 +77,7 @@ function Active(n) {
     for (i = 0; i < index.length; i++) {
         index[i].classList.remove('active');
     }
-    index[activeIndex].classList.add('active')
+    index[activeIndex].classList.add('active');
 
 
     for (i = 0; i < img.length; i++) {

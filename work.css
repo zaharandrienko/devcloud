@@ -1,0 +1,55 @@
+.aboutWork{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 230px;
+    display: grid;
+    grid-template-columns: 0.88fr 0.14fr 0.88fr;
+    column-gap: 30px;
+}
+.textWork h1{
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 40px;
+}
+.textWork h3{
+    color: #017B65;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 26px;
+}
+.textWork p{
+    margin: 35px 0;
+}
+.aboutWork ul{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.aboutWork li{
+    cursor: pointer;
+    text-align: center;
+    padding: 15px 0px 25px 0;
+    height: 10px;
+    border: 1px #000000 solid;
+}
+.imgWork{
+    overflow: hidden;
+}
+.imgWork img{
+    width: 100%;
+}
+.textWork button{
+    display: block;
+    margin-top: 70px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 14px 35px;
+    background-color: #000000;
+    border: none;
+    border-radius: 32px;
+    border: 1px rgb(0, 0, 0) solid;
+    transition: all 200ms;
+}

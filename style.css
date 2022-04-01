@@ -59,6 +59,10 @@ a{
     float: left;
     margin-right: 50px;
     font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 1.5px;
 }
 .menu a{
     color: rgb(255, 255, 255);
@@ -69,6 +73,55 @@ a{
 .down{
     width: 12px;
     height: 6px;
+}
+.downMenu{
+    width: 710px;
+    height: 0px;
+    background-color: #ffffff;
+    clip-path: polygon(50% 0, 52% 2%, 100% 2%, 100% 100%, 0 100%, 0 2%, 48% 2%);
+    position: absolute;
+    top: 50px;
+    right: 320px;
+    overflow: hidden;
+    transition: all 300ms;
+}
+.downMenu img{
+    width: 35%;
+    height: auto;
+    margin: 70px 0;
+    float: left;
+}
+.downText{
+    width: 40%;
+    float: left;
+    margin: 60px 10%;
+}
+.downText a{
+    color: black;
+}
+.downText h1{
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.downText h3{
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 200ms;
+    cursor: pointer;
+}
+.downText h3:hover{
+    color: #017B65;
+    transition: all 200ms;
+}
+.downText hr{
+    height: 1px;
+    border: 0px black solid;
+    background-color: #017B65;
+}
+.downMenuActive{
+    height: 300px;
+    transition: all 300ms;
 }
 
 
