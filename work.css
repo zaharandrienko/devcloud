@@ -53,3 +53,13 @@
     border: 1px rgb(0, 0, 0) solid;
     transition: all 200ms;
 }
+
+
+
+
+button:hover{
+    border: none;
+    background-color: #29A28C;
+    border: 1px #29A28C solid;
+    transition: all 300ms;
+}

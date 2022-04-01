@@ -1,14 +1,14 @@
 html {
     scroll-behavior: smooth;
-  }
-body{
+}
+
+body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
-
-a{
+a {
     text-decoration: none;
     color: #ffffff;
     cursor: pointer;
@@ -30,32 +30,37 @@ a{
     z-index: 100000;
     transition: all 300ms;
 }
-.scroll{
+
+.scroll {
     background-color: #29a28ccb;
     transition: all 300ms;
 }
-.stack{
+
+.stack {
     display: none;
 }
+
 .toolbar img {
     width: 40px;
     height: 40px;
     margin: 0 11px 0 75px;
     float: left;
 }
+
 .toolbar span {
     color: white;
     float: left;
     font-weight: bold;
 }
 
-.toolbar .menu{
+.toolbar .menu {
     position: absolute;
     right: 0;
     list-style: none;
     margin-right: 20px;
 }
-.menu li{
+
+.menu li {
     float: left;
     margin-right: 50px;
     font-size: 16px;
@@ -64,70 +69,92 @@ a{
     font-weight: 300;
     letter-spacing: 1.5px;
 }
-.menu a{
+
+.menu a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: 300;
     letter-spacing: 1.5px;
 }
-.down{
+
+.downArr{
+    width: 14px;
+    height: 7px;
+    position: absolute;
+    top: 8px;
+    left: 150px;
+    transform: rotate(0deg);
+    transition: all 200ms;
+}
+.downArrRota{
+    transform: rotate(180deg);
+    transition: all 200ms;
+}
+.down {
     width: 12px;
     height: 6px;
 }
-.downMenu{
+
+.downMenu {
     width: 710px;
     height: 0px;
     background-color: #ffffff;
-    clip-path: polygon(50% 0, 52% 2%, 100% 2%, 100% 100%, 0 100%, 0 2%, 48% 2%);
+    clip-path: polygon(50% 0, 51% 2%, 100% 2%, 100% 100%, 0 100%, 0 2%, 49% 2%);
     position: absolute;
-    top: 50px;
-    right: 320px;
+    top: 30px;
+    right: 300px;
     overflow: hidden;
     transition: all 300ms;
 }
-.downMenu img{
+
+.downMenu img {
     width: 35%;
     height: auto;
     margin: 70px 0;
     float: left;
 }
-.downText{
+
+.downText {
     width: 40%;
     float: left;
     margin: 60px 10%;
+    color: #000000;
 }
-.downText a{
+
+.downText a {
     color: black;
 }
-.downText h1{
+
+.downText h1 {
     font-size: 24px;
     font-weight: 400;
     text-transform: uppercase;
 }
-.downText h3{
+
+.downText h3 {
     font-size: 18px;
     font-weight: 400;
     transition: all 200ms;
     cursor: pointer;
 }
-.downText h3:hover{
+
+.downText h3:hover {
     color: #017B65;
     transition: all 200ms;
 }
-.downText hr{
+
+.downText hr {
     height: 1px;
     border: 0px black solid;
     background-color: #017B65;
 }
-.downMenuActive{
+
+.downMenuActive {
     height: 300px;
     transition: all 300ms;
 }
 
-
-
-
-.container{
+.container {
     width: 100%;
     height: fit-content;
     padding: 0;
@@ -135,19 +162,19 @@ a{
     overflow: hidden;
 }
 
-
-
-.home{
+.home {
     position: relative;
     height: fit-content;
     overflow: hidden;
 }
-.video{
+
+.video {
     width: 100%;
     margin: 0;
     padding: 0;
 }
-.filter{
+
+.filter {
     position: absolute;
     width: 100%;
     margin: 0;
@@ -155,7 +182,8 @@ a{
     height: 99%;
     background-color: #0d0c217a;
 }
-.titleLink{
+
+.titleLink {
     color: rgb(255, 255, 255);
     position: absolute;
     width: 90%;
@@ -164,48 +192,33 @@ a{
     text-align: center;
     z-index: 10000;
 }
-.titleLink h1{
+
+.titleLink h1 {
     text-transform: uppercase;
     font-size: 47px;
     font-weight: 100;
     letter-spacing: 4px;
 }
-.titleLink button{
+
+.titleLink button {
     margin-top: 50px;
     color: #ffffff;
     font-size: 16px;
     padding: 12px 39px;
-    background-color:#ffffff00;
+    background-color: #ffffff00;
     border: 1px rgb(255, 255, 255) solid;
     border-radius: 43px;
     cursor: pointer;
     transition: all 200ms;
 }
-.titleLink img{
+
+.titleLink img {
     width: 49px;
     height: 71px;
     margin-top: 50px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.numbers{
+.numbers {
     text-align: center;
     width: 90%;
     margin-left: 5%;
@@ -215,60 +228,68 @@ a{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.number{
+.number {
     border-right: 2px #29A28C solid;
 }
 
-.lustNumber{
+.lustNumber {
     border: none;
 }
 
-.number h1{
+.number h1 {
     font-size: 48px;
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 8px;
 }
-.number p{
+
+.number p {
     padding: 0% 20%;
     font-size: 16px;
     font-weight: 400;
     margin-top: 0;
 }
-.about{
+
+.about {
     width: 90%;
     margin-left: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.about img{
+.about img {
     width: 100%;
     height: auto;
 }
-.titleImg{
+
+.titleImg {
     margin-top: 25px;
 }
-.about .text{
+
+.about .text {
     text-align: center;
     margin-left: 30px;
 }
-.text h2{
+
+.text h2 {
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 2.4px;
     margin-bottom: 69px;
 }
-.text h3{
+
+.text h3 {
     font-size: 23px;
     font-weight: 400;
 }
-.text p{
+
+.text p {
     font-size: 13px;
     font-weight: 400;
     margin-top: 100px;
 }
-.text button{
+
+.text button {
     color: #ffffff;
     font-size: 18px;
     font-weight: 300;
@@ -280,14 +301,13 @@ a{
     transition: all 200ms;
 }
 
-
-
-.title{
+.title {
     width: 100%;
     text-align: center;
     margin: 180px 0 130px 0;
 }
-.services{
+
+.services {
     margin-left: auto;
     margin-right: auto;
     width: 1204px;
@@ -296,7 +316,7 @@ a{
     transition: all 300ms;
 }
 
-.service{
+.service {
     position: relative;
     width: 240px;
     height: 450px;
@@ -308,31 +328,37 @@ a{
     float: left;
     margin-right: 92px;
 }
-.lustService{
+
+.lustService {
     margin-right: 0;
 }
-.service h1{
+
+.service h1 {
     font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
     margin-top: 55px;
     margin-bottom: 0;
 }
-.lustService h1{
+
+.lustService h1 {
     margin-top: 80px;
 }
-.service p{
+
+.service p {
     margin-top: 50px;
     margin-bottom: 36px;
     font-size: 14px;
     font-weight: 300;
 }
-.service a{
+
+.service a {
     color: #29A28C;
     position: absolute;
     bottom: 60px;
 }
-.angle{
+
+.angle {
     position: absolute;
     top: 0;
     right: 0;
@@ -340,54 +366,62 @@ a{
     height: 160px;
     background-image: url(./assets/img/V3.png);
 }
- .angle img{
-     width: 50px;
-     height: auto;
-     float: right;
-     margin: 17px;
- }
-.control{
+
+.angle img {
+    width: 50px;
+    height: auto;
+    float: right;
+    margin: 17px;
+}
+
+.control {
     display: none;
 }
 
-.about2{
+.about2 {
     width: 90%;
     margin-left: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.about2 img{
+.about2 img {
     width: 100%;
     height: auto;
 }
-.titleImg{
+
+.titleImg {
     margin-top: 25px;
 }
-.about2 .text2{
+
+.about2 .text2 {
     position: relative;
     text-align: left;
     margin-left: 30px;
 }
-.text2 h1{
+
+.text2 h1 {
     font-size: 36px;
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 0;
 }
-.text2 p{
+
+.text2 p {
     margin-top: 70px;
     font-size: 18px;
     font-weight: 400;
-    width: 78%;   
+    width: 78%;
 }
-.text2 a{
+
+.text2 a {
     color: #000000;
     text-transform: uppercase;
     position: absolute;
     bottom: 20px;
 }
-.about2Button{
+
+.about2Button {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -403,14 +437,14 @@ a{
     transition: all 200ms;
 }
 
-.about3{
+.about3 {
     width: 90%;
     margin-left: 5%;
     display: grid;
     grid-template-columns: 0.15fr 1fr 1fr;
 }
 
-.ind{
+.ind {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     list-style-type: none;
@@ -418,8 +452,7 @@ a{
     margin: 0;
 }
 
-
-.index{
+.index {
     cursor: pointer;
     text-align: center;
     padding: 15px 0px 25px 0;
@@ -427,51 +460,54 @@ a{
     border: 1px #000000 solid;
 }
 
-.about3 img{
+.about3 img {
     margin-left: 30px;
     width: 100%;
     height: auto;
 }
-.titleImg{
+
+.titleImg {
     margin-top: 25px;
 }
-.text3{
+
+.text3 {
     display: none;
     position: relative;
     text-align: left;
     margin-left: 60px;
 }
-.img3{
+
+.img3 {
     display: none;
 }
 
-.text3 h1{
+.text3 h1 {
     font-size: 36px;
     font-weight: 400;
     text-transform: uppercase;
     margin: 0;
 }
-.text3 p{
+
+.text3 p {
     margin-top: 70px;
     font-size: 18px;
     font-weight: 400;
-  
 }
-.text3 a{
+
+.text3 a {
     color: #000000;
     text-transform: uppercase;
     position: absolute;
     bottom: 20px;
 }
 
-.technologies{
+.technologies {
     width: 90%;
     margin-left: 5%;
     height: auto;
 }
 
-
-.services2{
+.services2 {
     width: 90%;
     margin-left: 5%;
     height: 552px;
@@ -480,96 +516,93 @@ a{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.service2{
+
+.service2 {
     /* width: 306px; */
     height: fit-content;
     float: left;
     padding: 0 8%;
 }
 
-.service2 img{
+.service2 img {
     width: 100%;
     height: auto;
 }
-.service2 h1{
+
+.service2 h1 {
     font-size: 23px;
     font-weight: 700;
     margin-top: 42px;
     margin-bottom: 32px;
 }
-.service2 p{
+
+.service2 p {
     margin: 0%;
     font-size: 16px;
     font-weight: 400;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.form{
+.form {
     margin-top: 200px;
     width: 100%;
     height: 548px;
     text-align: center;
 }
 
-.form .comment{
+.form .comment {
     background-color: rgba(41, 162, 140, 0.1);
     width: 45%;
     height: 548px;
     float: left;
 }
-.comment h3{
+
+.comment h3 {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
 }
-.comment h5{
+
+.comment h5 {
     margin: 0;
     padding: 0;
     font-size: 18px;
     font-weight: 300;
 }
-.comment p{
+
+.comment p {
     color: #515151;
     margin: 28px 0 53px 0;
     padding: 0;
     font-size: 16px;
     font-weight: 300;
 }
-.comment h6{
+
+.comment h6 {
     color: #515151;
     margin: 5px 0 0 0;
     padding: 0;
     font-size: 16px;
     font-weight: 300;
 }
-.face{
+
+.face {
     margin-top: 75px;
 }
-.stars{
+
+.stars {
     width: 163px;
     height: 25px;
 }
 
-.form .mail{
+.form .mail {
     background-image: url(./assets/img/17.jpg);
     width: 55%;
     height: 548px;
     float: left;
 }
 
-.mail h1{
+.mail h1 {
     font-size: 36px;
     font-weight: 400;
     margin-top: 60px;
@@ -578,7 +611,7 @@ a{
     text-transform: uppercase;
 }
 
-.mail input{
+.mail input {
     font-weight: 300;
     width: 31%;
     padding-left: 2%;
@@ -591,7 +624,8 @@ a{
     border: none;
     border-bottom: 1px #ffffff solid;
 }
-.mail textarea{
+
+.mail textarea {
     width: 100%;
     height: 148px;
     margin-top: 0px;
@@ -600,7 +634,8 @@ a{
     background-color: rgba(255, 255, 255, 0);
     border: none;
 }
-.textArea{
+
+.textArea {
     font-weight: 300;
     width: 72%;
     padding-top: 20px;
@@ -614,22 +649,24 @@ a{
     border: 1px #ffffff solid;
     border-radius: 13px;
 }
-#firstInput{
+
+#firstInput {
     width: 72%;
 }
-#lustInput{
+
+#lustInput {
     margin-left: 6%;
 }
 
-
-.telegram{
+.telegram {
     width: 38px;
     height: 38px;
     position: absolute;
     bottom: 10px;
     right: 58px;
 }
-.add{
+
+.add {
     width: 38px;
     height: 38px;
     position: absolute;
@@ -637,45 +674,52 @@ a{
     right: 10px;
 }
 
-.footer{
+.footer {
     width: 100%;
     height: 475px;
     position: relative;
 }
-.containerFooter{
+
+.containerFooter {
     width: 97%;
     margin: 0 1.5%;
     height: 255px;
     padding-top: 100px;
     border-bottom: #BDBDBD 1px solid;
     display: grid;
-    grid-template-columns:0.4fr 2fr 1.6fr 1fr 1fr 1fr;
+    grid-template-columns: 0.4fr 2fr 1.6fr 1fr 1fr 1fr;
 }
-.lustTitle{
+
+.lustTitle {
     color: #BDBDBD;
     position: absolute;
     right: 74px;
     bottom: 57px;
 }
-.column p{
+
+.column p {
     float: right;
     width: 100%;
     font-size: 16px;
     font-weight: 300;
     margin-bottom: 0;
 }
-.column img{
+
+.column img {
     float: right;
 }
-.logoFooter{
+
+.logoFooter {
     float: left;
-   width: 100%;
-   height: 40px;
+    width: 100%;
+    height: 40px;
 }
-.logoFooter img{
+
+.logoFooter img {
     float: left;
 }
-.logoFooter p{
+
+.logoFooter p {
     width: 60%;
     float: left;
     margin-left: 10px;
@@ -683,7 +727,8 @@ a{
     margin: 0;
     padding: 0;
 }
-.logoTitle{
+
+.logoTitle {
     width: 60%;
     float: left;
     margin-left: 10px;
@@ -692,113 +737,97 @@ a{
     font-weight: 700;
     margin-top: 13px;
 }
-.spase{
+
+.spase {
     float: left;
     width: 65px;
     height: 65px;
 }
-.bot{
+
+.bot {
     margin-top: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-button:hover{
+button:hover {
     border: none;
     background-color: #29A28C;
     border: 1px #29A28C solid;
     transition: all 300ms;
 }
-::-webkit-input-placeholder { /* Edge */
-    color: rgba(255, 255, 255, 0.46);
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer */
-    color: rgba(255, 255, 255, 0.46);
-  }
-  
-  ::placeholder {
-    color: rgba(255, 255, 255, 0.46);
-  }
 
-textarea:focus, input:focus{
+::-webkit-input-placeholder {
+    /* Edge */
+    color: rgba(255, 255, 255, 0.46);
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer */
+    color: rgba(255, 255, 255, 0.46);
+}
+
+ ::placeholder {
+    color: rgba(255, 255, 255, 0.46);
+}
+
+textarea:focus,
+input:focus {
     outline: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.active{
+.active {
     color: #29A28C;
-    border:1px #29A28C solid;
+    border: 1px #29A28C solid;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1100px) {
-    .menu{
+    .menu {
         display: none;
         padding-top: 10%;
     }
-    .menu li{
+    .menu li {
+        position: relative;
         width: 100%;
         margin-bottom: 20px;
+    }
+    .downArr {
+        position: absolute;
+        top: 8px;
+        left: 48px;
+    }
+    .downMenu{
+        position: relative;
+        width: 100%;
+        height: 0px;
+        top:0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .downMenuActive{
+        height: 65px;
+    }
+    .downText{
+        margin: 0 0 0 20px;
+    }
+    .downText a{
+        color: #BFBFBF;
+    }
+    .downText h3{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .downMenu img{
+        display: none;
+    }
+    .downMenu h1{
+        display: none;
+    }
+    .downMenu hr{
+        display: none;
     }
     .toolbar img {
         margin: 0 11px 0 15px;
     }
-    .stack{
+    .stack {
         position: absolute;
         right: 17px;
         display: block;
@@ -806,7 +835,9 @@ textarea:focus, input:focus{
         height: 20px;
         cursor: pointer;
     }
-    .bar1,.bar2,.bar3{
+    .bar1,
+    .bar2,
+    .bar3 {
         position: absolute;
         width: 26px;
         height: 2px;
@@ -815,35 +846,35 @@ textarea:focus, input:focus{
         opacity: 1.0;
         transition: all 300ms;
     }
-    .bar1{
-        top:0px;
+    .bar1 {
+        top: 0px;
         transform: rotate(0deg);
         transition: all 300ms;
     }
-    .bar2{
-        top:8px;
+    .bar2 {
+        top: 8px;
     }
-    .bar3{
-        top:16px;
+    .bar3 {
+        top: 16px;
         transform: rotate(0deg);
         transition: all 300ms;
     }
-    .rotate1{
+    .rotate1 {
         transform: rotate(45deg);
         top: 8px;
         transition: all 300ms;
     }
-    .rotate2{
+    .rotate2 {
         transform: rotate(-45deg);
         top: 8px;
         transition: all 300ms;
     }
-    .opacity{
+    .opacity {
         opacity: 0.0;
         color: rgba(255, 0, 0, 0);
         transition: all 300ms;
     }
-    .blackMenu{
+    .blackMenu {
         padding-top: 20px;
         position: fixed;
         display: block;
@@ -852,87 +883,86 @@ textarea:focus, input:focus{
         background-color: #000000c0;
         transition: all 300ms;
     }
-    .video{
+    .video {
         width: 130%;
         margin: 0 auto;
     }
-    .titleLink{
+    .titleLink {
         margin-top: 20%;
     }
-    .titleLink h1{
+    .titleLink h1 {
         font-size: 4.5vw;
         letter-spacing: 0.2vw;
     }
-    .titleLink button{
+    .titleLink button {
         margin-top: 3%;
         font-size: 1.8vw;
     }
-    .numbers{
+    .numbers {
         grid-template-columns: 1fr 1fr;
         margin-top: 130px;
     }
-    .number{
+    .number {
         margin-top: 50px;
     }
-    .secondNumber{
+    .secondNumber {
         border: none;
     }
-    .about{
-        grid-template-columns:1fr;
+    .about {
+        grid-template-columns: 1fr;
     }
-    .about .text{
+    .about .text {
         margin-left: 0;
     }
-    .none{
+    .none {
         display: none;
     }
-    .about2{
+    .about2 {
         grid-template-columns: 1fr;
         width: 100%;
         margin-left: 0;
     }
-    .text2 h1{
+    .text2 h1 {
         font-size: 28px;
     }
-    .text2 p{
+    .text2 p {
         font-size: 18px;
     }
-    .text2 a{
+    .text2 a {
         bottom: -25px;
     }
-    .title{
+    .title {
         margin-bottom: 100px;
     }
-    .about3{
+    .about3 {
         grid-template-columns: 1fr;
         width: 100%;
         margin-left: 0;
     }
-    .ind{
+    .ind {
         margin: 0;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
-    
-    .index{
+    .index {
         margin-left: 15%;
         margin-right: 15%;
         height: 10px;
     }
-    .containerSlider{
+    .containerSlider {
         width: 800%;
         margin-left: -350%;
     }
-    .services{
+    .services {
         margin: 0 auto;
     }
-    .control{
+    .control {
         display: block;
         width: 234px;
         height: 2px;
         margin: 86px auto 0 auto;
     }
-    .controller{
+    .controller {
         width: 70px;
         height: 2px;
         margin-right: 8px;
@@ -941,85 +971,82 @@ textarea:focus, input:focus{
         cursor: pointer;
         transition: all 300ms;
     }
-    .lustController{
+    .lustController {
         margin-right: 0;
     }
-    .activeController{
+    .activeController {
         background-color: #000000;
         transition: all 300ms;
     }
-    .left{
+    .left {
         padding-left: 885px;
         transition: all 300ms;
     }
-    .right{
+    .right {
         padding-right: 885px;
         transition: all 300ms;
     }
-    .about3 img{
+    .about3 img {
         margin-top: 50px;
         margin-left: 0px;
     }
-    .about3 .text3{
+    .about3 .text3 {
         width: 94%;
         margin-left: 3%;
         margin-top: 70px;
     }
-    .text3 h1{
+    .text3 h1 {
         font-size: 36px;
     }
-    .text3 p{
+    .text3 p {
         font-size: 18px;
     }
-    .text3 a{
+    .text3 a {
         bottom: -30px;
     }
-    .services2{
+    .services2 {
         height: fit-content;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
-    .service2{
+    .service2 {
         margin-top: 40px;
     }
-    .containerForm{
+    .containerForm {
         height: fit-content;
     }
-    .containerForm .comment{
+    .containerForm .comment {
         width: 100%;
     }
-    .containerForm .mail{
+    .containerForm .mail {
         width: 100%;
     }
-    .footer{
+    .footer {
         height: fit-content;
     }
 }
 
-
-
-
 @media screen and (max-width: 500px) {
-    .video{
+    .video {
         width: 180%;
     }
-    .titleLink{
+    .titleLink {
         height: 75%;
     }
-    .titleLink h1{
+    .titleLink h1 {
         margin-top: 25%;
     }
-    .titleLink button{
+    .titleLink button {
         display: none;
     }
-    .titleLink img{
+    .titleLink img {
         position: absolute;
         right: 0px;
         bottom: 0px;
         width: 22.5px;
         height: 33px;
     }
-    .containerNumbers{
+    .containerNumbers {
         width: 100%;
         overflow-x: auto;
         /* white-space: nowrap; */
@@ -1027,28 +1054,27 @@ textarea:focus, input:focus{
     .containerNumbers::-webkit-scrollbar {
         width: 0px;
     }
-    .numbers{
+    .numbers {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         margin: 0;
         height: 158px;
         width: 200%;
     }
-    .number{
+    .number {
         float: left;
         margin: 0 10px 0 10px;
         padding: 0;
         border: #00000000;
     }
-    .number h1{
+    .number h1 {
         font-size: 24px;
         margin-top: 50px;
         margin-bottom: 0px;
         padding: 0;
     }
-    .number p{
+    .number p {
         font-size: 12px;
         padding: 0;
         margin: 0;
     }
-
 }

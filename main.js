@@ -3,6 +3,8 @@
 var x = true;
 var y = true;
 
+
+
 window.addEventListener('scroll', function () {
     var toolbarBack = document.getElementsByClassName("toolbar");
     if (pageYOffset > 200) {
@@ -12,6 +14,8 @@ window.addEventListener('scroll', function () {
     }
 
 });
+
+
 
 
 
@@ -51,15 +55,19 @@ function Menu() {
 
 function DownMenuActive(){
     var downMenu = document.getElementsByClassName("downMenu");
+    var downArr = document.getElementsByClassName("downArr");
+
 
 
     if(y == true){
         downMenu[0].classList.add('downMenuActive')
+        downArr[0].classList.add('downArrRota')
     }
     else{
         downMenu[0].classList.remove('downMenuActive')
-    }
+        downArr[0].classList.remove('downArrRota')
 
+    }
     y = !y
 }
 
