@@ -806,7 +806,8 @@ input:focus {
         height: 65px;
     }
     .downText{
-        margin: 0 0 0 20px;
+        margin: 0 0 0 5%;
+        width: 95%;
     }
     .downText a{
         color: #BFBFBF;
@@ -880,7 +881,7 @@ input:focus {
         display: block;
         z-index: 1000000;
         height: 100%;
-        background-color: #000000c0;
+        background-color: #000000d2;
         transition: all 300ms;
     }
     .video {

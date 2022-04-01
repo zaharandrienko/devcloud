@@ -7,7 +7,7 @@ var y = true;
 
 window.addEventListener('scroll', function () {
     var toolbarBack = document.getElementsByClassName("toolbar");
-    if (pageYOffset > 200) {
+    if (pageYOffset > -1) {
         toolbarBack[0].classList.add('scroll');
     } else {
         toolbarBack[0].classList.remove('scroll');
