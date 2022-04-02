@@ -753,6 +753,7 @@ button:hover {
     background-color: #29A28C;
     border: 1px #29A28C solid;
     transition: all 300ms;
+    color: #ffffff;
 }
 
 ::-webkit-input-placeholder {

@@ -1,0 +1,153 @@
+.aboutAbout{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 260px;
+}
+.aboutAbout img{
+    float: left;
+    width: 35%;
+    margin-top: 180px;
+}
+.aboutText{
+    float: left;
+    margin-left: 10%;
+    width: 55%;
+}
+.aboutText h3{
+    font-size: 40px;
+    margin: 0px 0 70px 0;
+}
+.aboutText p{
+    font-size: 18px;
+    margin: 40px 0 40px 0;
+}
+.aboutText button{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 16px 65px;
+    background-color: #000000;
+    border: none;
+    border-radius: 32px;
+    border: 1px rgb(0, 0, 0) solid;
+    transition: all 200ms;
+    margin-top: 40px;
+}
+
+.containerBlack{
+    margin: 180px 0;
+    width:fit-content;
+    min-width: 50%;
+    max-width: 60%;
+    height: fit-content;
+    min-height: 110px;
+    background-color: #000000;
+    padding: 45px 75px;
+    display: grid;
+    grid-template-columns: 0.2fr 2fr;
+}
+.containerBlackLast{
+    margin-bottom: 0;
+}
+.containerBlackRight{
+    float: right;
+}
+.block{
+    height: 56px;
+    background-color: #017b654a;
+    float: left;
+    display: block;
+}
+.blockPhoto{
+    height: auto;
+    background-color: #ffffff00;
+    background-image: url('./assets/img/Ellipse.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.blackText{
+    display: block;
+    float: left;
+    color: #ffffff;
+    height: auto;
+}
+.blackText h1{
+    margin: 0px 30px;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.blackText h3{
+    margin: 25px 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.blackText h5{
+    margin: 0px 30px;
+    font-size: 22px;
+    font-weight: 400;
+}
+.blackText p{
+    margin: 35px 30px;
+    font-size: 16px;
+}
+
+.numbersEsf{
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.numberEsf h1{
+    font-size: 66px;
+    font-weight: 400;
+}
+.numberEsf p{
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.aboutEsf{
+    display: grid;
+    grid-template-columns: 1fr 0.15fr 1fr;
+    width: 90%;
+    margin-left: 5%;
+}
+.columnAxis{
+    height: 100%;
+    margin-top: 65px;
+}
+.columsAxisBlack{
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    position: relative;
+}
+.axis img{
+    display: block;
+    margin: 0 auto;
+}
+.columnAxis h1{
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 82px 0;
+}
+.columnAxisLeft h1{
+    text-align: right;
+}
+.columsAxisBlack:nth-child(1n){
+    height: 258px ;
+}
+.columsAxisBlack:first-child{
+    height: 278px ;
+}
+.columsAxisBlack:nth-child(2n){
+    height: 314px ;
+}
+.columsAxisBlack p{
+    font-size: 18px;
+    font-weight: 300;
+    width: 80%;
+    margin-left: 15%;
+    padding-top: 70px;
+}
