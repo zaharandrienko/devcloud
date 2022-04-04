@@ -1,0 +1,11 @@
+.aboutWorkTablet ul{
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.aboutWorkTablet h4{
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 0px 80px 0;
+    height: 10px;
+}

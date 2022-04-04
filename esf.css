@@ -34,63 +34,7 @@
     margin-top: 40px;
 }
 
-.containerBlack{
-    margin: 180px 0;
-    width:fit-content;
-    min-width: 50%;
-    max-width: 60%;
-    height: fit-content;
-    min-height: 110px;
-    background-color: #000000;
-    padding: 45px 75px;
-    display: grid;
-    grid-template-columns: 0.2fr 2fr;
-}
-.containerBlackLast{
-    margin-bottom: 0;
-}
-.containerBlackRight{
-    float: right;
-}
-.block{
-    height: 56px;
-    background-color: #017b654a;
-    float: left;
-    display: block;
-}
-.blockPhoto{
-    height: auto;
-    background-color: #ffffff00;
-    background-image: url('./assets/img/Ellipse.png');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-}
-.blackText{
-    display: block;
-    float: left;
-    color: #ffffff;
-    height: auto;
-}
-.blackText h1{
-    margin: 0px 30px;
-    font-size: 36px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-.blackText h3{
-    margin: 25px 30px;
-    font-size: 18px;
-    font-weight: 400;
-}
-.blackText h5{
-    margin: 0px 30px;
-    font-size: 22px;
-    font-weight: 400;
-}
-.blackText p{
-    margin: 35px 30px;
-    font-size: 16px;
-}
+
 
 .numbersEsf{
     grid-template-columns: 1fr 1fr;

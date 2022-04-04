@@ -232,7 +232,7 @@ a {
     border-right: 2px #29A28C solid;
 }
 
-.lustNumber {
+.lastNumber {
     border: none;
 }
 
@@ -329,7 +329,7 @@ a {
     margin-right: 92px;
 }
 
-.lustService {
+.lastService {
     margin-right: 0;
 }
 
@@ -341,7 +341,7 @@ a {
     margin-bottom: 0;
 }
 
-.lustService h1 {
+.lastService h1 {
     margin-top: 80px;
 }
 
@@ -654,7 +654,7 @@ a {
     width: 72%;
 }
 
-#lustInput {
+#lastInput {
     margin-left: 6%;
 }
 
@@ -690,7 +690,7 @@ a {
     grid-template-columns: 0.4fr 2fr 1.6fr 1fr 1fr 1fr;
 }
 
-.lustTitle {
+.lastTitle {
     color: #BDBDBD;
     position: absolute;
     right: 74px;
@@ -747,6 +747,79 @@ a {
 .bot {
     margin-top: 30px;
 }
+.containerBlack{
+    margin: 180px 0;
+    width:fit-content;
+    min-width: 50%;
+    max-width: 60%;
+    height: fit-content;
+    min-height: 110px;
+    background-color: #000000;
+    padding: 45px 75px;
+    display: grid;
+    grid-template-columns: 0.2fr 2fr;
+}
+.containerBlackLast{
+    margin-bottom: 0;
+}
+.containerBlackRight{
+    float: right;
+}
+.block{
+    height: 56px;
+    background-color: #017b654a;
+    float: left;
+    display: block;
+}
+.blockPhoto{
+    height: auto;
+    background-color: #ffffff00;
+    background-image: url('./assets/img/Ellipse.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.blackText{
+    display: block;
+    float: left;
+    color: #ffffff;
+    height: auto;
+}
+.blackText h1{
+    margin: 0px 30px;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.blackText h3{
+    margin: 25px 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.blackText h5{
+    margin: 0px 30px;
+    font-size: 22px;
+    font-weight: 400;
+}
+.blackText p{
+    margin: 35px 30px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 button:hover {
     border: none;
@@ -754,6 +827,7 @@ button:hover {
     border: 1px #29A28C solid;
     transition: all 300ms;
     color: #ffffff;
+    cursor: pointer;
 }
 
 ::-webkit-input-placeholder {
@@ -779,6 +853,15 @@ input:focus {
     color: #29A28C;
     border: 1px #29A28C solid;
 }
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1100px) {
     .menu {
@@ -973,7 +1056,7 @@ input:focus {
         cursor: pointer;
         transition: all 300ms;
     }
-    .lustController {
+    .lastController {
         margin-right: 0;
     }
     .activeController {
