@@ -76,6 +76,9 @@ a {
     font-weight: 300;
     letter-spacing: 1.5px;
 }
+.menu a:hover{
+    color: rgb(255, 255, 255);
+}
 
 .downArr{
     width: 14px;
@@ -179,7 +182,8 @@ a {
     width: 100%;
     margin: 0;
     padding: 0;
-    height: 99%;
+    top: -5px;
+    height: 100%;
     background-color: #0d0c217a;
 }
 
@@ -696,17 +700,29 @@ a {
     right: 74px;
     bottom: 57px;
 }
+.column a{
+    color: black;
+}
 
 .column p {
+    position: relative;
     float: right;
     width: 100%;
     font-size: 16px;
     font-weight: 300;
     margin-bottom: 0;
+    white-space: pre;
 }
-
-.column img {
+.columnIcon{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: -30px;
+}
+.columnArrow {
     float: right;
+    width: 32px;
+    height: 56px;
 }
 
 .logoFooter {
@@ -828,6 +844,9 @@ button:hover {
     transition: all 300ms;
     color: #ffffff;
     cursor: pointer;
+}
+a:hover{
+    color:#29A28C;
 }
 
 ::-webkit-input-placeholder {
@@ -1097,6 +1116,11 @@ input:focus {
     .service2 {
         margin-top: 40px;
     }
+    .form{
+        display: block;
+        height: fit-content;
+        min-height: 1096px;
+    }
     .containerForm {
         height: fit-content;
     }
@@ -1106,8 +1130,48 @@ input:focus {
     .containerForm .mail {
         width: 100%;
     }
+    
     .footer {
         height: fit-content;
+        padding-bottom: 120px;
+    }
+    .containerFooter {
+        height: fit-content;
+        padding-bottom: 50px;
+        grid-template-columns:  1fr 0.5fr 0.1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 80px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    .firstColumn{
+        display: none;
+    }
+    .column1{
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    .column2{
+        grid-column-start: 1;
+        grid-row-start: 2;
+        margin-left: 90px;
+    }
+    .column3{
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+    .column4{
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    .columnArrow{
+        float: left;
+    }
+    .lastTitle{
+        right: 20px;
+        font-size: 14px;
     }
 }
 
@@ -1161,5 +1225,90 @@ input:focus {
         font-size: 12px;
         padding: 0;
         margin: 0;
+    }
+    .mail{
+        height: 548px;
+    }
+    .comment{
+        height: 548px;
+    }
+    .mail h1{
+        font-size: 4vw;
+    }
+    .mail input{
+        width: 72% ;
+        font-size: 13px;
+        height: 25px;
+        margin-top: 35px;
+    }
+    #lastInput {
+        margin-left: 0;
+    }
+    .mail textarea {
+        height: 98px;
+        font-size: 14px;
+    }
+    .textArea {
+        padding-top: 10px;
+        margin-top: 40px;
+        border-radius: 10px;
+    }
+    .telegram{
+        width: 15%;
+        height: auto;
+        left: 32%;
+        bottom: -60%;
+    }
+    .add{
+        width: 15%;
+        height: auto;
+        right: 32%;
+        bottom: -60%;
+    }
+    .containerFooter{
+        padding-bottom: 50px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        column-gap: 5%;
+    }
+    .columnArrow{
+        float: right;
+        margin-right: 10px;
+    }
+    .column p{
+        font-size: 14px;
+    }
+    .columnIcon{
+        width: 18px;
+        height: 18px;
+    }
+    .column3, .column4{
+        display: none;
+    }
+    .column2{
+        margin-left: 50px;
+
+    }
+    .logoFooter{
+        width: 100%;
+        position: relative;
+    }
+    .logoFooter h3{
+        position: absolute;
+        width: 200px;
+        left: 40px;
+        font-size: 12px;
+    }
+    .logoFooter img{
+        width: 40px;
+    }
+    .spase{
+        width: 50px;
+    }
+    .bot{
+        margin-top: 10px;
+    }
+    .lastTitle{
+        font-size: 12px;
     }
 }

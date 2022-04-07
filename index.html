@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
     <script src="./main.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -49,12 +51,12 @@
         </ul>
     </header>
 
-    <div class="container home">
+    <div class="container home" id="home">
         <div class="titleLink">
-            <h1>Компания по разработке<br>програмного обеспечения</h1>
-            <a href="#Form"><button>Запросить консультацию</button></a>
+            <h1 data-aos="fade-up" data-aos-duration="400">Компания по разработке<br>програмного обеспечения</h1>
+            <a href="#Form"><button data-aos="fade-up" data-aos-duration="700">Запросить консультацию</button></a>
             <br>
-            <a href="#Form"><img src="./assets/img/arrow (1).png"></a>
+            <a href="#Form"><img src="./assets/img/arrow (1).png" data-aos="fade-up" data-aos-duration="1000"></a>
         </div>
         <div class="filter"></div>
         <video autoplay muted loop class="video">
@@ -347,9 +349,9 @@
 
         <footer class="footer">
             <div class="containerFooter">
-                <div class="column">
+                <div class="column firstColumn">
                 </div>
-                <div class="column">
+                <div class="column column1">
                     <div class="logoFooter">
                         <img src="./assets/img/Frame 44 (1).png" />
                         <h3 class="logoTitle">DEVCLOUD SOLUTIONS</h3>
@@ -359,24 +361,24 @@
                         <p>Алматы, Жамбыла 111</p>
                     </div>
                 </div>
-                <div class="column">
-                    <p>​+7 (727) 334-21-45​</p>
+                <div class="column column2">
+                    <p>​<img src="./assets/img/icons8-телефон-96 (1) 1.png" class="columnIcon" style="top: 20px;">+7 (727) 334-21-45​</p>
                     <p>+7 (707) 998-93-90</p>
-                    <p>info@devcloud.kz</p>
-                    <p>Whatsapp Telegram</p>
+                    <p>​<img src="./assets/img/icons8-почта-100 1.png" class="columnIcon">info@devcloud.kz</p>
+                    <p><img src="./assets/img/icons8-whatsapp 1.png" class="columnIcon">Whatsapp <img src="./assets/img/icons8-телеграмма-app (2) 1.png" class="columnIcon" style="left: 80px;">        Telegram</p>
+                </div>
+                <div class="column column3">
+                    <a href="./index.html"><p>Главная</p></a>
+                    <a href="./portfolio.html"><p>Портфолио</p></a>
+                    <a href="./servicesMobile.html"><p>Услуги</p></a>
+                </div>
+                <div class="column column4">
+                    <a href=""><p>Процессы</p></a>
+                    <a href=""><p>О компании</p></a>
+                    <a href=""><p>Контакты</p></a>
                 </div>
                 <div class="column">
-                    <p>Главная</p>
-                    <p>Портфолио</p>
-                    <p>Услуги</p>
-                </div>
-                <div class="column">
-                    <p>Процессы</p>
-                    <p>О компании</p>
-                    <p>Контакты</p>
-                </div>
-                <div class="column">
-                    <img style="width: 32px;height: 56px;" src="./assets/img/Arrow.png">
+                    <a href="#home"><img class="columnArrow" src="./assets/img/Arrow.png"></a>
                 </div>
             </div>
             <span class="lastTitle">© Devcloud Solutions, Inc. 2021. We love our users!</span>
@@ -392,6 +394,7 @@
 
 
         <script>
+            AOS.init();
             Active(0);
             Control(1);
 
