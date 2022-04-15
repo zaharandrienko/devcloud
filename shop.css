@@ -1,0 +1,46 @@
+.aboutEsf{
+    display: grid;
+    grid-template-columns: 1fr 0.15fr 1fr;
+    width: 90%;
+    margin-left: 5%;
+}
+.columnAxis{
+    height: 100%;
+    margin-top: 20px;
+}
+.columsAxisBlack{
+    width: 100%;
+    padding-top: 20px;
+    background-color: #000000;
+    color: white;
+    position: relative;
+}
+.axis img{
+    display: block;
+    margin: 0 auto;
+}
+.columnAxis h1{
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 130px 0 160px 0;
+}
+.columnAxisLeft h1{
+    text-align: right;
+}
+.columsAxisBlack:nth-child(1n){
+    height: 300px ;
+}
+.columsAxisBlack:first-child{
+    height: 315px ;
+}
+.columsAxisBlack:nth-child(2n){
+    height: 340px ;
+}
+.columsAxisBlack p{
+    font-size: 18px;
+    font-weight: 300;
+    width: 80%;
+    margin-left: 15%;
+    padding-top: 40px;
+}

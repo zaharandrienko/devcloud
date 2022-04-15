@@ -1,11 +1,52 @@
 .aboutWorkTablet ul{
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+.textWork{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
 .aboutWorkTablet h4{
     font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
     margin: 0;
-    padding: 10px 0px 80px 0;
+    padding: 10px 0px 10px 0;
     height: 10px;
+}
+
+
+.displays{
+    width: 90%;
+    margin: 0 5%;
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+.display{
+    display: block;
+    width: 100%;
+}
+.list{
+    width: 80%;
+    margin: 0 10%;
+}
+.list p{
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.numbersEsf{
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.numberEsf h1{
+    font-size: 66px;
+    font-weight: 400;
+}
+.numberEsf p{
+    font-size: 18px;
+    margin-top: 20px;
 }

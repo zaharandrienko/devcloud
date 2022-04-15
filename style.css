@@ -306,9 +306,9 @@ a {
 }
 
 .title {
-    width: 100%;
+    width: 50%;
     text-align: center;
-    margin: 180px 0 130px 0;
+    margin: 180px auto 130px auto;
 }
 
 .services {
