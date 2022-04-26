@@ -51,6 +51,15 @@
         </ul>
     </header>
 
+    <div class="phone" onclick="Call()">
+        <img src="./assets/img/klipartz.com.png">
+        <div class="callForm">
+            <input type="text" placeholder="Введите Ваш номер">
+            <input type="text" placeholder="Как к вам обратиться">
+        </div>
+        <img src="./assets/img/white-paper-airplane-icon-download-axe-tool-symbol-star-symbol-transparent-png-1201819.png" class="callImg">
+    </div>
+
     <div class="container home" id="home">
         <div class="titleLink">
             <h1 data-aos="fade-up" data-aos-duration="400">Компания по разработке<br>програмного обеспечения</h1>
@@ -397,6 +406,7 @@
             AOS.init();
             Active(0);
             Control(1);
+            Call();
 
             var x = true;
 

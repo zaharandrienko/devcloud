@@ -2,6 +2,7 @@
 
 var x = true;
 var y = true;
+var z = true
 
 
 
@@ -51,7 +52,24 @@ function Menu() {
     x = !x
 }
 
+function Call(){
+    var phone = document.getElementsByClassName("phone");
+    var callImg = document.getElementsByClassName("callImg");
+    var callForm = document.getElementsByClassName("callForm");
 
+    if(z === false){
+        phone[0].classList.add('call');
+        callImg[0].classList.add('paperBlock');
+        callForm[0].classList.add('paperBlock2')
+    }
+    else{
+        phone[0].classList.remove('call');
+        callImg[0].classList.remove('paperBlock');
+        callForm[0].classList.remove('paperBlock2')
+    }
+
+    z = !z
+}
 
 function DownMenuActive(){
     var downMenu = document.getElementsByClassName("downMenu");

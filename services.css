@@ -191,3 +191,81 @@ button:hover{
     border: 1px #29A28C solid;
     transition: all 300ms;
 }
+
+
+
+@media screen and (max-width: 1100px) {
+    .aboutAbout{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .aboutAbout img{
+        width: 100%;
+        margin: 0;
+        order: 1;
+    }
+    .aboutText{
+        padding: 0;
+        width: 90%;
+        margin-left: 5%;
+        order: 2;
+    }
+    .aboutText h3{
+        display: none;
+    }
+    .aboutText3 h5{
+        margin-top: 40px;
+    }
+
+    .containerSlider3{
+        margin-top: 120px;
+    }
+    .services3{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    
+    .service3{
+        padding: 20px;
+    }
+    .service3 h1{
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    .service3 p{
+        margin-top: 15px;
+        margin-bottom: 60px;
+    }
+    .service3 a{
+        color: #29A28C;
+        position: absolute;
+        bottom: 40px;
+    }
+    .angle3{
+        background-image: url(./assets/img/V3.png);
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .services3{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    .service3 p{
+        margin-top: 15px;
+        margin-bottom: 60px;
+    }
+    .service3 a{
+        color: #29A28C;
+        position: absolute;
+        bottom: 40px;
+    }
+}

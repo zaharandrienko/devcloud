@@ -63,3 +63,55 @@ button:hover{
     border: 1px #29A28C solid;
     transition: all 300ms;
 }
+
+@media screen and (max-width: 1100px) {
+    .aboutWork{
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 0px;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .imgWork{
+        order: 1;
+        width: 100%;
+    }
+    .aboutWork ul{
+        order: 2;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 3%;
+    }
+    .textWork{
+        order: 3;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .textWork h1{
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 500px) {
+    .textWork button{
+        display: block;
+        margin: 50px auto 0 auto;
+    }
+    .textWork h1{
+        font-size: 20px;
+    }
+    .textWork h3{
+        font-size: 16px;
+    }
+    .textWork p{
+        margin: 15px 0;
+    }
+    .aboutWork li{
+        padding: 5px 0px 11px 0;
+        height: 16px;
+        border: 1px #000000 solid;
+    }
+}
