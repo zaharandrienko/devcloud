@@ -1085,6 +1085,7 @@ input:focus {
     }
     .about .text {
         margin-left: 0;
+        font-size: 23px;
     }
     .none {
         display: none;
@@ -1178,8 +1179,8 @@ input:focus {
     }
     .services2 {
         height: fit-content;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 1fr 1fr; */
     }
     .service2 {
         margin-top: 40px;
@@ -1311,6 +1312,13 @@ input:focus {
         font-size: 12px;
         padding: 0;
         margin: 0;
+    }
+    .about .text {
+        margin-left: 0;
+        font-size: 14px;
+    }
+    .controller {
+        height: 4px;
     }
     .mail{
         height: 548px;

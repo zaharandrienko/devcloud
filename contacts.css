@@ -4,16 +4,17 @@
     margin: 230px 10% 200px 10%;
 }
 
-.contacts img{
+#map{
     width: 60%;
-    height: auto;
+    height: 500px;
     float: left;
+    order: 2;
 }
 .contactsText{
     width: 30%;
     margin-left: 10%;
     margin-top: 50px;
-    float: left;
+    float: right;
 }
 .contactsText p{
     font-size: 1vw;
@@ -53,6 +54,9 @@
     }
     #Form{
         margin-top: 0;
+    }
+    #map{
+        width: 100%;
     }
 
 }
