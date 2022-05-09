@@ -5,6 +5,62 @@ var y = true;
 var z = true
 
 
+const item = document.getElementsByClassName('comment-slider')
+var Ind = 1;
+
+function Plus(e){
+    if(e==1){
+        Ind = Ind + 1;
+    }
+    else{
+        Ind = Ind - 1;
+    }
+
+    if(Ind > 4){
+        Ind = 1
+    }
+
+    if(Ind < 1){
+        Ind = 4
+    }
+    Team(Ind);
+}
+
+function Team(x){
+
+    if(x == 1){
+        item[0].classList.remove('comment-slider2');
+        item[0].classList.remove('comment-slider3');
+        item[0].classList.remove('comment-slider4');
+    }
+
+    if(x == 2){
+        item[0].classList.add('comment-slider2');
+        item[0].classList.remove('comment-slider3');
+        item[0].classList.remove('comment-slider4');
+    }
+
+    if(x == 3){
+        item[0].classList.add('comment-slider3');
+        item[0].classList.remove('comment-slider2');
+        item[0].classList.remove('comment-slider4');
+    }
+
+    if(x == 4){
+        item[0].classList.add('comment-slider4');
+        item[0].classList.remove('comment-slider2');
+        item[0].classList.remove('comment-slider3');
+    }
+}
+
+
+
+
+
+
+
+
+
 
 window.addEventListener('scroll', function () {
     var toolbarBack = document.getElementsByClassName("toolbar");
