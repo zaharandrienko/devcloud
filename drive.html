@@ -56,13 +56,14 @@
 
     <div class="container">
         <div class="aboutAbout">
+            <h3 class="adaptiveTitle">Мобильное приложение для водителей</h3>
             <img src="./assets/img/Frame 77.png">
             <div class="aboutText">
                 <h3>Мобильное приложение для водителей</h3>
                 <p>Мобильное приложение для водителей позволяет держать свой баланс под полным контролем и снять деньги
                     в любое удобное время. Основная задача моментальный вывод денег с баланса профиля водителя, на
                     банковскую карточку водителя.</p>
-                <button>Связаться с нами</button>
+                <a href="#Form"><button>Связаться с нами</button></a>
             </div>
         </div>
     </div>
@@ -90,10 +91,10 @@
         <h1 class="title">Ключевые модули приложения:</h1>
         <div class="aboutAbout aboutAbout2">
             <div class="aboutText aboutText2">
-                <p>Авторизация, Регистрация, Смена пароля</p>
-                <p>Подтверждение СМС, Пин-код для дальнейшего входа</p>
-                <p>Главная страница с данными профиля и балансом, а также возможность выбора карты и указания суммы перевода</p>
-                <p>История переводов</p>
+                <p class="main-line"><span></span>Авторизация, Регистрация, Смена пароля</p>
+                <p class="main-line"><span></span>Подтверждение СМС, Пин-код для дальнейшего входа</p>
+                <p class="main-line"><span></span>Главная страница с данными профиля и балансом, а также возможность выбора карты и указания суммы перевода</p>
+                <p class="main-line"><span></span>История переводов</p>
             </div>
             <img src="./assets/img/Frame 44app.png">
         </div>
@@ -130,58 +131,21 @@
 
     <div class="form" id="Form">
         <div class="containerForm">
-            <div class="comment" data-aos="fade-up" data-aos-duration="700">
-                <div class="comment-controller-left" onclick="Plus(2)"></div>
-                <div class="comment-controller-right" onclick="Plus(1)"></div>
-                <div class="comment-slider">
-                    <div class="comment-item">
-                        <img class="face" src="./assets/img/аватар.png">
-                        <h3>Юрий Архипов</h3>
-                        <h5>Директор ТОО "Copyland"</h5>
-                        <p>Разработана очень удобная система приема и<br> обработки заказов, с ней реально
-                            высвобождается<br>
-                            огромное
-                            количество ресурсов.</p>
-                        <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
-                    </div>
-                    <div class="comment-item">
-                        <img class="face" src="./assets/img/Ellipse.png">
-                        <h3>КУТИЩЕВА Ю.А</h3>
-                        <h5>Директор HUB(Beeline) по развитию ИТ</h5>
-                        <p> Все наши пожелания и доработки выполнялись в обоснованные сроки и с должным качеством. Все это позволило нам совместно достичь запланированных результатов и повысить эффективность выгрузки ЭСФ в ИС ЭСФ.</p>
-                        <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
-                    </div>
-                    <div class="comment-item">
-                        <img class="face" src="./assets/img/Панель руководителя.png">
-                        <h3>АДИЛЬЖАН ХАМРАЕВ</h3>
-                        <h5>Директор ТОО "Fototeca"</h5>
-                        <p>Благодарим компанию «DevCloud Solutions» за профессионализм, оперативность и отзывчивость. Разработана очень удобная система приема и обработки заказов, с ней реально высвобождается огромное количество ресурсов. Особая благодарность Светлане Зенько, очень приятно с Вами работать.</p>
-                        <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
-                    </div>
-                    <div class="comment-item">
-                        <img class="face" src="./assets/img/FOTOTECA.jpg">
-                        <h3>АДИЛЬЖАН ХАМРАЕВ</h3>
-                        <h5>Директор ТОО "Fototeca"</h5>
-                        <p>Благодарим компанию «DevCloud Solutions» за профессионализм, оперативность и отзывчивость. Разработана очень удобная система приема и обработки заказов, с ней реально высвобождается огромное количество ресурсов. Особая благодарность Светлане Зенько, очень приятно с Вами работать.</p>
-                        <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
-                    </div>
-                </div>
+            <div class="comment" style="background-image: url(./assets/img/image\ 44.jpg);background-size:cover;background-position: center;">
             </div>
-            <div class="mail">
-                <h1>Есть вопросы? Задавайте!</h1>
-                <input id="firstInput" type="text" name="firstname" placeholder="Имя">
-                <input type="text" name="E-mail" placeholder="E-mail">
-                <input id="lastInput" type="text" name="phone" placeholder="Телефон">
-                <div class="textArea">
-                    <textarea placeholder="Напишите своё сообщение..."></textarea>
-                    <img class="telegram" src="./assets/img/телег.png">
-                    <img class="add" src="./assets/img/вложыить.png">
-                </div>
-            </div>
+            <form class="mail" action="#" method="post" id="sendform" enctype="multipart/form-data">
+                <fieldset>
+                    <h1>Есть вопросы? Задавайте!</h1>
+                    <input id="firstInput"placeholder="Имя" name="name" value="" type="text" class="required">
+                    <input type="text"  placeholder="E-mail" name="email" value="" size="40" type="email">
+                    <input id="lastInput" placeholder="Телефон" name="tel" value="" size="40" class="required" type="tel">
+                    <div class="textArea">
+                        <textarea placeholder="Напишите своё сообщение..." name="message"></textarea>
+                        <input class="telegram"  value="" name="sendMail" type="submit"/>
+                        <input class="add custom-file-input"  name="file" value="" type="file" />
+                    </div>
+                </fieldset>
+            </form>
         </div>
     </div>
 
@@ -223,7 +187,7 @@
     </footer>
 
     <script>
-        Call();
+        // Call();
     </script>
 </body>
 

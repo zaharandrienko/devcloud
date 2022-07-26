@@ -40,7 +40,103 @@
 .columsAxisBlack p{
     font-size: 18px;
     font-weight: 300;
-    width: 80%;
+    width: 75%;
     margin-left: 15%;
     padding-top: 40px;
+}
+.main-line span{
+    top: -5px;
+}
+.columsAxisBlack span{
+    top: 33px;
+}
+.aboutText3-item-text p{
+    width: 90%;
+}
+
+@media screen and (max-width: 1100px){
+    .aboutAbout{
+        margin-top: 0px;
+    }
+    .numbersEsf{
+        height: 230px;
+        overflow-y: scroll;
+    }
+    .numberEsf h1{
+        font-size: 66px;
+        font-weight: 400;
+    }
+    .numberEsf p{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    
+    .aboutEsf{
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-left: 0%;
+    }
+    .columnAxis{
+        height: 100%;
+        margin-top: 0px;
+    }
+    .columsAxisBlack{
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 100%;
+        background-color: #000000;
+        color: white;
+        position: relative;
+    }
+    .axis img{
+        display: none;
+    }
+    .aboutEsf img{
+        display: none;
+    }
+    .axisAdaptive{
+        display: block;
+    }
+    .columnAxis h5{
+        width: 90%;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0px 0;
+        margin-left: 5%;
+        /* padding: 10px 0; */
+    }
+    .columnAxis h1{
+        display: none;
+    }
+    .columnAxisLeft h1{
+        text-align: right;
+    }
+    .columsAxisBlack:nth-child(1n){
+        height: 258px ;
+    }
+    .columsAxisBlack:first-child{
+        height: 278px ;
+    }
+    .columsAxisBlack:nth-child(2n){
+        height: 314px ;
+    }
+    .columsAxisBlack p{
+        font-size: 18px;
+        font-weight: 300;
+        width: 80%;
+        margin-left: 5%;
+        padding-top: 5px;
+    } 
+    .main-line span{
+        top: 0px;
+    }
+    .aboutText3-item-text h5{
+        font-size: 16px;
+        width: 95%;
+    }
+    .aboutText3-item-text p{
+        width: 100%;
+        font-size: 14px;
+    } 
 }

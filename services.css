@@ -46,15 +46,113 @@
     font-size: 36px;
     font-weight: 300;
     margin: 0;
-}
-.aboutText3 p{
-    margin: 10px 0 20px 0;
-    width: 45%;
-}
-.aboutText3 button{
-    margin-top: 40px;
+    line-height: 36px;
 }
 
+.aboutText3-item-text p{
+    margin: 0px 0 20px 0;
+    width: 50%;
+    max-height: 0;
+    overflow: hidden;
+    transition: 200ms;
+}
+.textNone p{
+    margin-top: 10px;
+    max-height: 300px;
+    transition: 400ms;
+}
+.aboutText3 button{
+    margin-top: 56px;
+}
+.aboutText3-item{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.15fr 1fr;
+    column-gap: 30px;
+    margin-bottom: 20px;
+}
+.item-index{
+    cursor: pointer;
+    text-align: center;
+    padding: 15px 0px 25px 0px;
+    height: 10px;
+    border: 1px #000000 solid;
+}
+.item-index:hover{
+    color: #29A28C;
+    border: 1px #29A28C solid;
+}
+
+.item-index-arrow{
+    position: relative;
+}
+
+.item-index-arrow img{
+    width: 31px;
+    float: right;
+    margin-top: 10px;
+    margin-left: 25px;
+    display: block;
+    transform: rotate(0deg);
+    transition: 300ms;
+    position: absolute;
+    top: 0;
+    right: -45px;
+}
+.item-index-arrow-active img{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+.aboutText3-item-text h5{
+    width: fit-content;
+}
+.indkActive{
+    color: #ffffff;
+    border: 1px #29A28C solid;
+    background-color: #29A28C;
+}
+.indkActive:hover{
+    color: #ffffff;
+    border: 1px #29A28C solid;
+    background-color: #29A28C;
+}
+
+
+.aboutAboutAdaptive{
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 260px;
+}
+.aboutAboutAdaptive img{
+    width: 60%;
+    float: right;
+}
+.aboutTextAdaptive{
+    float: left;
+    margin-left: 5%;
+    width: 30%;
+    float: left;
+    padding-top: 80px;
+}
+.aboutTextAdaptive h3{
+    font-size: 40px;
+    margin: 0px 0 50px 0;
+}
+.aboutTextAdaptive p{
+    font-size: 18px;
+    margin: 50px 0 50px 0;
+}
+.aboutTextAdaptive button{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 16px 65px;
+    background-color: #000000;
+    border: none;
+    border-radius: 32px;
+    border: 1px rgb(0, 0, 0) solid;
+    transition: all 200ms;
+}
 
 .containerSlider3{
     margin-top: 150px;
@@ -94,7 +192,10 @@
 .service3 a{
     color: #29A28C;
     position: absolute;
-    bottom: 60px;
+    bottom: 40px;
+}
+.service3Link{
+    width: 60%;
 }
 .angle3{
     position: absolute;
@@ -172,12 +273,14 @@
     position: absolute;
     bottom: 40px;
     left: 10%;
-    width: 80%;
+    width: 60%;
 }
 .service4 img{
     width: 100%;
 }
-
+.service4 img{
+    width: 100%;
+}
 
 
 
@@ -212,6 +315,7 @@ button:hover{
         width: 90%;
         margin-left: 5%;
         order: 2;
+        padding-bottom: 20px;
     }
     .aboutText h3{
         display: none;
@@ -272,11 +376,55 @@ button:hover{
         position: absolute;
         bottom: 40px;
         left: 10%;
-        width: 80%;
+        width: 70%;
     }
     .service4 img{
         width: 100%;
     }
+    .aboutAboutAdaptive{
+        margin-top: 0px;
+    }
+    .aboutAboutAdaptive img{
+        display: none;
+    }
+    .aboutTextAdaptive{
+        margin-left: 5%;
+        width: 90%;
+        float: left;
+        padding-top: 80px;
+    }
+    .aboutTextAdaptive h3{
+        font-size: 40px;
+        margin: 0px 0 50px 0;
+    }
+    .aboutTextAdaptive p{
+        font-size: 18px;
+        margin: 50px 0 50px 0;
+    }
+    .aboutTextAdaptive button{
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 16px 65px;
+        background-color: #000000;
+        border: none;
+        border-radius: 32px;
+        border: 1px rgb(0, 0, 0) solid;
+        transition: all 200ms;
+    }
+
+
+
+
+    .aboutText3-item{
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .aboutText3 h5{
+        margin: 0;
+    }
+    
+    
     
 }
 
@@ -293,7 +441,38 @@ button:hover{
     .service3 a{
         color: #29A28C;
         position: absolute;
-        bottom: 40px;
+        bottom: 20px;
     }
-    
+    .service3Link{
+        width: 60%;
+    }
+    .aboutText3 h5{
+       font-size: 20px;
+    }
+    .aboutText3-item{
+        column-gap: 10px;
+    }.item-index{
+        font-size: 11px;
+        padding: 5px 0px 11px 0px;
+        height: 10px;
+        border: 1px #000000 solid;
+        margin-top: 5px;
+    }
+    .aboutText3-item-text p{
+        margin: 0px 0 20px 0;
+        width: 100%;
+        font-size: 14px;
+    }
+    .item-index-arrow img{
+        width: 21px;
+        float: right;
+        top: 6px;
+        right: -30px;
+        transform: rotate(0deg);
+        transition: 300ms;
+    }
+    .item-index-arrow-active img{
+        transform: rotate(180deg);
+        transition: 300ms;
+    }
 }

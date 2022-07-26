@@ -8,6 +8,16 @@ var z = true
 const item = document.getElementsByClassName('comment-slider')
 var Ind = 1;
 
+// window.addEventListener('scroll', function () {
+//     var toolbarBack = document.getElementsByClassName("toolbarMain");
+//     if (pageYOffset > 200) {
+//         toolbarBack[0].classList.add('scroll');
+//     } 
+//     else{
+//         toolbarBack[0].classList.remove('scroll');
+//     }
+// });
+
 function Plus(e){
     if(e==1){
         Ind = Ind + 1;
@@ -62,15 +72,7 @@ function Team(x){
 
 
 
-window.addEventListener('scroll', function () {
-    var toolbarBack = document.getElementsByClassName("toolbar");
-    if (pageYOffset > -1) {
-        toolbarBack[0].classList.add('scroll');
-    } else {
-        toolbarBack[0].classList.remove('scroll');
-    }
 
-});
 
 
 
@@ -108,24 +110,24 @@ function Menu() {
     x = !x
 }
 
-function Call(){
-    var phone = document.getElementsByClassName("phone");
-    var callImg = document.getElementsByClassName("callImg");
-    var callForm = document.getElementsByClassName("callForm");
+// function Call(){
+//     var phone = document.getElementsByClassName("phone");
+//     var callImg = document.getElementsByClassName("callImg");
+//     var callForm = document.getElementsByClassName("callForm");
 
-    if(z === false){
-        phone[0].classList.add('call');
-        callImg[0].classList.add('paperBlock');
-        callForm[0].classList.add('paperBlock2')
-    }
-    else{
-        phone[0].classList.remove('call');
-        callImg[0].classList.remove('paperBlock');
-        callForm[0].classList.remove('paperBlock2')
-    }
+//     if(z === false){
+//         phone[0].classList.add('call');
+//         callImg[0].classList.add('paperBlock');
+//         callForm[0].classList.add('paperBlock2')
+//     }
+//     else{
+//         phone[0].classList.remove('call');
+//         callImg[0].classList.remove('paperBlock');
+//         callForm[0].classList.remove('paperBlock2')
+//     }
 
-    z = !z
-}
+//     z = !z
+// }
 
 function DownMenuActive(){
     var downMenu = document.getElementsByClassName("downMenu");
@@ -200,3 +202,135 @@ function Control(n) {
 }
 
 
+function Work1(x){
+    let ind1 = document.getElementsByClassName("work1ind")
+    let block1 = document.getElementsByClassName("blockWork1")
+
+    if(x == 1){
+        ind1[0].classList.add('workActive')
+        ind1[1].classList.remove('workActive')
+        ind1[2].classList.remove('workActive')
+        block1[0].classList.add('textWorkNone')
+        block1[1].classList.remove('textWorkNone')
+        block1[2].classList.remove('textWorkNone')
+    }
+    if(x == 2){
+        ind1[0].classList.remove('workActive')
+        ind1[1].classList.add('workActive')
+        ind1[2].classList.remove('workActive')
+        block1[0].classList.remove('textWorkNone')
+        block1[1].classList.add('textWorkNone')
+        block1[2].classList.remove('textWorkNone')
+    }
+    if(x == 3){
+        ind1[0].classList.remove('workActive')
+        ind1[1].classList.remove('workActive')
+        ind1[2].classList.add('workActive')
+        block1[0].classList.remove('textWorkNone')
+        block1[1].classList.remove('textWorkNone')
+        block1[2].classList.add('textWorkNone')
+    }
+}
+function Work2(x){
+    let ind1 = document.getElementsByClassName("work1ind2")
+    let block1 = document.getElementsByClassName("blockWork2")
+
+    if(x == 1){
+        ind1[0].classList.add('workActive')
+        ind1[1].classList.remove('workActive')
+        ind1[2].classList.remove('workActive')
+        block1[0].classList.add('textWorkNone')
+        block1[1].classList.remove('textWorkNone')
+        block1[2].classList.remove('textWorkNone')
+    }
+    if(x == 2){
+        ind1[0].classList.remove('workActive')
+        ind1[1].classList.add('workActive')
+        ind1[2].classList.remove('workActive')
+        block1[0].classList.remove('textWorkNone')
+        block1[1].classList.add('textWorkNone')
+        block1[2].classList.remove('textWorkNone')
+    }
+    if(x == 3){
+        ind1[0].classList.remove('workActive')
+        ind1[1].classList.remove('workActive')
+        ind1[2].classList.add('workActive')
+        block1[0].classList.remove('textWorkNone')
+        block1[1].classList.remove('textWorkNone')
+        block1[2].classList.add('textWorkNone')
+    }
+}
+function Work3(x){
+    let ind1 = document.getElementsByClassName("work1ind3")
+    let block1 = document.getElementsByClassName("blockWork3")
+
+    if(x == 1){
+        ind1[0].classList.add('workActive')
+        ind1[1].classList.remove('workActive')
+        ind1[2].classList.remove('workActive')
+        ind1[3].classList.remove('workActive')
+        block1[0].classList.add('textWorkNone')
+        block1[1].classList.remove('textWorkNone')
+        block1[2].classList.remove('textWorkNone')
+        block1[3].classList.remove('textWorkNone')
+    }
+    if(x == 2){
+        ind1[0].classList.remove('workActive')
+        ind1[1].classList.add('workActive')
+        ind1[2].classList.remove('workActive')
+        ind1[3].classList.remove('workActive')
+        block1[0].classList.remove('textWorkNone')
+        block1[1].classList.add('textWorkNone')
+        block1[2].classList.remove('textWorkNone')
+        block1[3].classList.remove('textWorkNone')
+    }
+    if(x == 3){
+        ind1[0].classList.remove('workActive')
+        ind1[1].classList.remove('workActive')
+        ind1[2].classList.add('workActive')
+        ind1[3].classList.remove('workActive')
+        block1[0].classList.remove('textWorkNone')
+        block1[1].classList.remove('textWorkNone')
+        block1[2].classList.add('textWorkNone')
+        block1[3].classList.remove('textWorkNone')
+    }
+    if(x == 4){
+        ind1[0].classList.remove('workActive')
+        ind1[1].classList.remove('workActive')
+        ind1[2].classList.remove('workActive')
+        ind1[3].classList.add('workActive')
+        block1[0].classList.remove('textWorkNone')
+        block1[1].classList.remove('textWorkNone')
+        block1[2].classList.remove('textWorkNone')
+        block1[3].classList.add('textWorkNone')
+    }
+}
+function Work4(x){
+    let ind1 = document.getElementsByClassName("work1ind4")
+    let block1 = document.getElementsByClassName("blockWork4")
+
+    if(x == 1){
+        ind1[0].classList.add('workActive')
+        ind1[1].classList.remove('workActive')
+        ind1[2].classList.remove('workActive')
+        block1[0].classList.add('textWorkNone')
+        block1[1].classList.remove('textWorkNone')
+        block1[2].classList.remove('textWorkNone')
+    }
+    if(x == 2){
+        ind1[0].classList.remove('workActive')
+        ind1[1].classList.add('workActive')
+        ind1[2].classList.remove('workActive')
+        block1[0].classList.remove('textWorkNone')
+        block1[1].classList.add('textWorkNone')
+        block1[2].classList.remove('textWorkNone')
+    }
+    if(x == 3){
+        ind1[0].classList.remove('workActive')
+        ind1[1].classList.remove('workActive')
+        ind1[2].classList.add('workActive')
+        block1[0].classList.remove('textWorkNone')
+        block1[1].classList.remove('textWorkNone')
+        block1[2].classList.add('textWorkNone')
+    }
+}

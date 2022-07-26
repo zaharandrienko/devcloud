@@ -56,13 +56,14 @@
 
     <div class="container">
         <div class="aboutAbout">
+            <h3 class="adaptiveTitle">Цифровизация в строительстве | Панель Руководителя</h3>
             <img src="./assets/img/image 35 (1).png">
             <div class="aboutText">
                 <h3>Цифровизация в строительстве | Панель Руководителя</h3>
                 <p>BI GROUP строительная компания
                     Разработана управленческая панель для руководителя строительной компании и мобильное веб-решение для
                     управления строительными проектами</p>
-                <button>Связаться с нами</button>
+                <a href="#Form"><button>Связаться с нами</button></a>
             </div>
         </div>
     </div>
@@ -73,10 +74,10 @@
             <div class="block"></div>
             <div class="blackText">
                 <h1>наши победы</h1>
-                <p>1 место – ПАО «Газпром»,
+                <p class="main-line"><span></span>1 место – ПАО «Газпром»,
                     Конкурс профессионального управления проектной деятельностью «Проектный Олимп 2018»
                 </p>
-                <p>1 место – ТОО BI-Holding,
+                <p class="main-line"><span></span>1 место – ТОО BI-Holding,
                     Конкурс профессионального управления проектной деятельностью «Проектный Олимп 2018»</p>
             </div>
         </div>
@@ -84,14 +85,14 @@
 
 
     <div class="container">
-        <div class="aboutAbout aboutAbout2">
+        <div class="aboutAbout aboutAbout2" style="margin-top: 20px;">
             <div class="aboutText aboutText2">
                 <h3>Внедрение проектного управления</h3>
                 <p>BI GROUP строительная компания
                     Разработана управленческая панель для руководителя строительной компании и мобильное веб-решение для
                     управления строительными проектами
                 </p>
-                <button>Связаться с нами</button>
+                <a href="#Form"><button>Связаться с нами</button></a>
             </div>
             <img src="./assets/img/image 33.png">
         </div>
@@ -108,31 +109,68 @@
         </div>
     </div>
 
-    <div class="container">
+    <!-- <div class="container">
         <img src="./assets/img/Frame 444 (3).png">
-    </div>
-    <h1 class="title">Какую информацию можно получить в Панели руководителя?</h1>
-    <div class="aboutWork aboutWorkTablet">
-        <div class="imgWork">
+    </div> -->
+    <h1 class="title" style="margin-top: 0px;">Какую информацию можно получить в Панели руководителя?</h1>
+    <div class="container">
+        <div class="aboutAbout" style="margin-top: 0;">
             <img src="./assets/img/bjorn-antonissen-37UYj2pnRac-unsplash 1.png">
-        </div>
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-        </ul>
-        <div class="textWork">
-            <h4>График производства работ</h4>
-            <h4>Динамика финансовых показателей проекта</h4>
-            <h4>Классификация портфеля проектов​</h4>
-            <h4>Анализ портфелей проектов</h4>
-            <h4>Управление рисками проекта</h4>
-            <h4>Управление сроками</h4>
-            <h4>Фиксирование извлеченных уроков</h4>
+            <div class="aboutText aboutText3">
+                <div class="aboutText3-item">
+                    <div class="item-index" onclick="Ind1(0)">1</div>
+                    <div class="aboutText3-item-text">
+                        <h5>График производства работ<span class="item-index-arrow"><img src="./assets/img/Vector 95.png"></span></h5>
+                        <p>Он включает плановые и фактические данные физического объёма работ, плановое и фактическое количество персонала необходимое для выполнения этих работ, а также ре-план. Ре-план это план физического объёма работ на следующую неделю с учётом накопленного отставания. По сути этот показатель говорит о том какой объём необходимо выполнить на следующей неделе, чтобы вернуться в график.
+                        </p>
+                    </div>
+                </div>
+                <div class="aboutText3-item">
+                    <div class="item-index" onclick="Ind1(1)">2</div>
+                    <div class="aboutText3-item-text">
+                        <h5>Динамика финансовых показателей проекта <span class="item-index-arrow"><img src="./assets/img/Vector 95.png"></span></h5>
+                        <p>Для интеграции с данными бюджетирования Панель руководителя связали с системой Cognos. Так появился отчёт по динамике показателей KPI.</p>
+                    </div>
+                </div>
+                <div class="aboutText3-item">
+                    <div class="item-index" onclick="Ind1(2)">1</div>
+                    <div class="aboutText3-item-text">
+                        <h5>Классификация портфеля проектов <span class="item-index-arrow"><img src="./assets/img/Vector 95.png"></span>​</h5>
+                        <p> Портфели проектов компании формировались по разным признакам, среди них — продуктовый, так в своё время сформировался портфель проектов индивидуального жилищного строительства и малоэтажного жилищного строительства. Географический признак – портфель проектов по городам. Признак по классу жилья — эконом, премиум и бизнес-класс.
+                        </p>
+                    </div>
+                </div>
+                <div class="aboutText3-item">
+                    <div class="item-index" onclick="Ind1(3)">2</div>
+                    <div class="aboutText3-item-text">
+                        <h5>Анализ портфелей проектов <span class="item-index-arrow"><img src="./assets/img/Vector 95.png"></span></h5>
+                        <p>Анализ портфелей проектов осуществляется через совмещённую форму по соблюдению сроков проекта на основании данных MS Project Server и 1С. Так в одном документе актуализировалась информация о соблюдении общей длительности проекта и динамика выполнения работ за последние 6 недель.</p>
+                    </div>
+                </div>
+                <div class="aboutText3-item">
+                    <div class="item-index" onclick="Ind1(4)">1</div>
+                    <div class="aboutText3-item-text">
+                        <h5>Управление рисками проекта <span class="item-index-arrow"><img src="./assets/img/Vector 95.png"></span></h5>
+                        <p>Любой участник проекта имеет возможность зарегистрировать в Панели руководителя риск по основным параметрам риска. После фиксации риска, система отправляет сообщение через корпоративную почту руководителю проекта о том, что создан риск и руководителю проекта необходимо запланировать мероприятия по устранению угрозы риска.
+                        </p>
+                    </div>
+                </div>
+                <div class="aboutText3-item">
+                    <div class="item-index" onclick="Ind1(5)">2</div>
+                    <div class="aboutText3-item-text">
+                        <h5>Управление сроками <span class="item-index-arrow"><img src="./assets/img/Vector 95.png"></span></h5>
+                        <p>Панель руководителя имеет возможность накапливать данные. Аккумулируя данные еженедельных отчётов о выполненных работах, движении рабочей силы и причинах отставания накопилась информация по всем проектам компании за год.</p>
+                    </div>
+                </div>
+                <div class="aboutText3-item">
+                    <div class="item-index" onclick="Ind1(6)">1</div>
+                    <div class="aboutText3-item-text">
+                        <h5>Фиксирование извлеченных уроков <span class="item-index-arrow"><img src="./assets/img/Vector 95.png"></span></h5>
+                        <p>Система позволяет при завершении конструктива зафиксировать как негативный опыт, так и положительный, а также предложения по недопущению потерь или закреплению положительных уроков. Применив фильтр по ключевому слову у пользователей есть возможность собрать всю накопленную информацию.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -158,8 +196,7 @@
                     получить данные для управленческой отчётности, с которыми работают управленцы. На основании
                     полученной отчетности менеджеры компании, имея полные данные, могут чётко и быстро принимать
                     решения. ​</p>
-                <button>Связаться с нами</button>
-            </div>
+                <a href="#Form"><button>Связаться с нами</button></a>            </div>
             <img src="./assets/img/Frame 4444 (3).png">
         </div>
     </div>
@@ -176,87 +213,38 @@
     </div>
 
     <div class="container">
-        <div class="aboutAbout aboutAbout2">
-            <div class="aboutText aboutText2" style="padding-top: 0;">
-                <p>Организовано календарно-сетевое планирование на системном уровне</p>
-                <p>Идет постоянная синхронизация информации и анализ ключевых показателей на Панели руководителя</p>
-                <p>Внедрены единые критерии оценки проектов</p>
-                <p>Ведется мониторинг проектов и применяются корректирующие действия</p>
-                <p>Осуществляется контроль сроков реализации проектов и заблаговременное реагирование на отклонения от
+        <h1 class="title left-title">Преимущества внедрения Панели руководителя | Smart Planner</h1>
+        <div class="aboutAbout aboutAbout2" style="margin-top: 0;">
+            <div class="aboutText aboutText2">
+                <p class="main-line"><span></span>Организовано календарно-сетевое планирование на системном уровне</p>
+                <p class="main-line"><span></span>Идет постоянная синхронизация информации и анализ ключевых показателей на Панели руководителя</p>
+                <p class="main-line"><span></span>Внедрены единые критерии оценки проектов</p>
+                <p class="main-line"><span></span>Ведется мониторинг проектов и применяются корректирующие действия</p>
+                <p class="main-line"><span></span>Осуществляется контроль сроков реализации проектов и заблаговременное реагирование на отклонения от
                     базового плана</p>
-                <p>Обеспечена еженедельная отчётность руководителей проектов</p>
+                <p class="main-line"><span></span>Обеспечена еженедельная отчётность руководителей проектов</p>
             </div>
             <img src="./assets/img/Frame  333.png" style="padding-top: 50px;">
         </div>
     </div>
 
-    <div class="container">
-        <div class="containerBlack containerBlackRight containerBlackLast">
-            <div class="block blockPhoto" style="background-image: url(./assets/img/Панель\ руководителя.png);"></div>
-            <div class="blackText">
-                <h1>Адильжан Хамраев</h1>
-                <h5>Директор ТОО "Fototeca"</h5>
-                <p>" Благодарим компанию «DevCloud Solutions» за профессионализм, оперативность и отзывчивость.
-                    Разработана очень удобная система приема и обработки заказов, с ней реально высвобождается огромное
-                    количество ресурсов. Особая благодарность Светлане Зенько, очень приятно с Вами работать. "</p>
-            </div>
-        </div>
-    </div>
-
     <div class="form" id="Form">
         <div class="containerForm">
-            <div class="comment" data-aos="fade-up" data-aos-duration="700">
-                <div class="comment-controller-left" onclick="Plus(2)"></div>
-                <div class="comment-controller-right" onclick="Plus(1)"></div>
-                <div class="comment-slider">
-                    <div class="comment-item">
-                        <img class="face" src="./assets/img/аватар.png">
-                        <h3>Юрий Архипов</h3>
-                        <h5>Директор ТОО "Copyland"</h5>
-                        <p>Разработана очень удобная система приема и<br> обработки заказов, с ней реально
-                            высвобождается<br>
-                            огромное
-                            количество ресурсов.</p>
-                        <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
-                    </div>
-                    <div class="comment-item">
-                        <img class="face" src="./assets/img/Ellipse.png">
-                        <h3>КУТИЩЕВА Ю.А</h3>
-                        <h5>Директор HUB(Beeline) по развитию ИТ</h5>
-                        <p> Все наши пожелания и доработки выполнялись в обоснованные сроки и с должным качеством. Все это позволило нам совместно достичь запланированных результатов и повысить эффективность выгрузки ЭСФ в ИС ЭСФ.</p>
-                        <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
-                    </div>
-                    <div class="comment-item">
-                        <img class="face" src="./assets/img/Панель руководителя.png">
-                        <h3>АДИЛЬЖАН ХАМРАЕВ</h3>
-                        <h5>Директор ТОО "Fototeca"</h5>
-                        <p>Благодарим компанию «DevCloud Solutions» за профессионализм, оперативность и отзывчивость. Разработана очень удобная система приема и обработки заказов, с ней реально высвобождается огромное количество ресурсов. Особая благодарность Светлане Зенько, очень приятно с Вами работать.</p>
-                        <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
-                    </div>
-                    <div class="comment-item">
-                        <img class="face" src="./assets/img/FOTOTECA.jpg">
-                        <h3>АДИЛЬЖАН ХАМРАЕВ</h3>
-                        <h5>Директор ТОО "Fototeca"</h5>
-                        <p>Благодарим компанию «DevCloud Solutions» за профессионализм, оперативность и отзывчивость. Разработана очень удобная система приема и обработки заказов, с ней реально высвобождается огромное количество ресурсов. Особая благодарность Светлане Зенько, очень приятно с Вами работать.</p>
-                        <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
-                    </div>
-                </div>
+            <div class="comment" style="background-image: url(./assets/img/image\ 44.jpg);background-size:cover;background-position: center;">
             </div>
-            <div class="mail">
-                <h1>Есть вопросы? Задавайте!</h1>
-                <input id="firstInput" type="text" name="firstname" placeholder="Имя">
-                <input type="text" name="E-mail" placeholder="E-mail">
-                <input id="lastInput" type="text" name="phone" placeholder="Телефон">
-                <div class="textArea">
-                    <textarea placeholder="Напишите своё сообщение..."></textarea>
-                    <img class="telegram" src="./assets/img/телег.png">
-                    <img class="add" src="./assets/img/вложыить.png">
-                </div>
-            </div>
+            <form class="mail" action="#" method="post" id="sendform" enctype="multipart/form-data">
+                <fieldset>
+                    <h1>Есть вопросы? Задавайте!</h1>
+                    <input id="firstInput"placeholder="Имя" name="name" value="" type="text" class="required">
+                    <input type="text"  placeholder="E-mail" name="email" value="" size="40" type="email">
+                    <input id="lastInput" placeholder="Телефон" name="tel" value="" size="40" class="required" type="tel">
+                    <div class="textArea">
+                        <textarea placeholder="Напишите своё сообщение..." name="message"></textarea>
+                        <input class="telegram"  value="" name="sendMail" type="submit"/>
+                        <input class="add custom-file-input"  name="file" value="" type="file" />
+                    </div>
+                </fieldset>
+            </form>
         </div>
     </div>
 
@@ -298,7 +286,33 @@
     </footer>
 
     <script>
-        Call();
+        // Call();
+        function Ind1(x){
+            let ind1 = document.getElementsByClassName("item-index")
+            let block1 = document.getElementsByClassName("aboutText3-item-text")
+            let arrow = document.getElementsByClassName('item-index-arrow')
+
+            if(ind1[x].classList.contains('indkActive')){
+                ind1[x].classList.remove('indkActive')
+            }
+            else{
+                ind1[x].classList.add('indkActive')
+            }
+
+            if(block1[x].classList.contains('textNone')){
+                block1[x].classList.remove('textNone')
+            }
+            else{
+                block1[x].classList.add('textNone')
+            }
+
+            if(arrow[x].classList.contains('item-index-arrow-active')){
+                arrow[x].classList.remove('item-index-arrow-active')
+            }
+            else{
+                arrow[x].classList.add('item-index-arrow-active')
+            }
+        }
     </script>
 </body>
 

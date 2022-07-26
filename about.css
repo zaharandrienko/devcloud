@@ -14,7 +14,7 @@
 }
 .aboutText h3{
     font-size: 40px;
-    margin: 30px 0 50px 0;
+    margin: 0px 0 50px 0;
 }
 .aboutText p{
     font-size: 18px;
@@ -47,12 +47,23 @@
 }
 .aboutText2{
     float: left;
-    margin-top: 40px;
+    margin-top: 0px;
     width: 45%;
 }
 .aboutText2 p{
+    position: relative;
     font-size: 18px;
     margin: 80px 0 0px 0;
+    padding-left: 50px;
+}
+.aboutText2 img{
+    width: 27px;
+    height: 20px;
+}
+.aboutAbout2 span{
+    position: absolute;
+    left: 0;
+    top: 10px;
 }
 
 

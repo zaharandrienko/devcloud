@@ -59,7 +59,7 @@
                     <h1>Автоматизированная выгрузка счет-фактур на портал esf.gov.kz |
                         ESF Integra</h1>
                     <p>Гибкий и удобный инструмент для интеграции биллинговых систем с порталом esf.gov.kz</p>
-                    <!-- <a href="./esf.html"><button>Узнать</button></a> -->
+                    <a href="./esf.html"><button>Узнать</button></a>
                 </div>
             </div>
             <div class="case"
@@ -69,7 +69,7 @@
                     <p>Разработана управленческая панель для руководителя строительной компании и мобильное веб-решение
                         для управления строительными проектами
                     </p>
-                    <!-- <a href="./tablet.html"><button>Узнать</button></a> -->
+                    <a href="./tablet.html"><button>Узнать</button></a>
                 </div>
             </div>
             <div class="case"
@@ -77,7 +77,7 @@
                 <div class="portfolioText">
                     <h1>Автоматизация производство по фотокниг</h1>
                     <p>Автоматизировали производство с момента создания дизайна до выдачи изделия клиенту</p>
-                    <!-- <a href="./fototeca.html"><button>Узнать</button></a> -->
+                    <a href="./fototeca.html"><button>Узнать</button></a>
                 </div>
             </div>
             <div class="case"
@@ -86,7 +86,7 @@
                     <h1>Автоматизация копировательной сети</h1>
                     <p>Разработана информационная система для управления процессами, контроля и отслеживания работы
                         полиграфической компании</p>
-                    <!-- <a href="./copyland.html"><button>Узнать</button></a> -->
+                    <a href="./copyland.html"><button>Узнать</button></a>
                 </div>
             </div>
             <div class="case"
@@ -96,7 +96,7 @@
                         СЭД</h1>
                     <p>Программа для внутреннего документооборота компании — ускоренная обработка документов,
                         согласование, систематизация и хранение</p>
-                    <!-- <a href="./bizdoc.html"><button>Узнать</button></a> -->
+                    <a href="./bizdoc.html"><button>Узнать</button></a>
                 </div>
             </div>
             <div class="case"
@@ -106,7 +106,7 @@
                     </h1>
                     <p>Внедрена система автоматического расчета туров
                     </p>
-                    <!-- <a href="./tour.html"><button>Узнать</button></a> -->
+                    <a href="./tour.html"><button>Узнать</button></a>
                 </div>
             </div>
             <div class="case"
@@ -116,7 +116,7 @@
                         прайс листов интернет-магазина</h1>
                     <p>Программа T-Data разработана для интернет-магазинов, для аккумуляции данных из различных
                         источников, прайс-листов и поставщиков</p>
-                    <!-- <a href="./shop.html"><button>Узнать</button></a> -->
+                    <a href="./shop.html"><button>Узнать</button></a>
                 </div>
             </div>
             <div class="case"
@@ -124,7 +124,7 @@
                 <div class="portfolioText">
                     <h1>X-Factoring</h1>
                     <p>Автоматизированная система управления факторинговыми операциями SofIA Factoring</p>
-                    <!-- <a href="./x-factoring.html"><button>Узнать</button></a> -->
+                    <a href="./x-factoring.html"><button>Узнать</button></a>
                 </div>
             </div>
             <div class="case"
@@ -136,7 +136,7 @@
                     <p>Мобильное приложениекоторое поможет пользователям
                         контролировать состояние здоровья, отслеживать
                         процесс лечения и приема лекарств.</p>
-                    <!-- <a href="./help.html"><button>Узнать</button></a> -->
+                    <a href="./help.html"><button>Узнать</button></a>
                 </div>
             </div>
             <div class="case"
@@ -144,7 +144,7 @@
                 <div class="portfolioText">
                     <h1>Мобильное приложение для водителей </h1>
                     <p>Мобильное приложение для водителей позволяет держать свой баланс под полным контролем.</p>
-                    <!-- <a href="./drive.html"><button>Узнать</button></a> -->
+                    <a href="./drive.html"><button>Узнать</button></a>
                 </div>
             </div>
         </div>
@@ -197,17 +197,19 @@
                     </div>
                 </div>
             </div>
-            <div class="mail">
-                <h1>Есть вопросы? Задавайте!</h1>
-                <input id="firstInput" type="text" name="firstname" placeholder="Имя">
-                <input type="text" name="E-mail" placeholder="E-mail">
-                <input id="lastInput" type="text" name="phone" placeholder="Телефон">
-                <div class="textArea">
-                    <textarea placeholder="Напишите своё сообщение..."></textarea>
-                    <img class="telegram" src="./assets/img/телег.png">
-                    <img class="add" src="./assets/img/вложыить.png">
-                </div>
-            </div>
+            <form class="mail" action="#" method="post" id="sendform" enctype="multipart/form-data">
+                <fieldset>
+                    <h1>Есть вопросы? Задавайте!</h1>
+                    <input id="firstInput"placeholder="Имя" name="name" value="" type="text" class="required">
+                    <input type="text"  placeholder="E-mail" name="email" value="" size="40" type="email">
+                    <input id="lastInput" placeholder="Телефон" name="tel" value="" size="40" class="required" type="tel">
+                    <div class="textArea">
+                        <textarea placeholder="Напишите своё сообщение..." name="message"></textarea>
+                        <input class="telegram"  value="" name="sendMail" type="submit"/>
+                        <input class="add custom-file-input"  name="file" value="" type="file" />
+                    </div>
+                </fieldset>
+            </form>
         </div>
     </div>
 
@@ -249,7 +251,7 @@
     </footer>
 
     <script>
-        Call();
+        // Call();
     </script>
 </body>
 

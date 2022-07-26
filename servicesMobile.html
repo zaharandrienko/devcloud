@@ -63,7 +63,7 @@
                 <p>Наша команда разработчиков мобильных приложений может помочь вам создать эффективное мобильное
                     приложение, которое отражает ваш бренд и задает тон в кратчайшие сроки.
                 </p>
-                <button>Связаться с нами</button>
+                <a href="#Form"><button>Связаться с нами</button></a>
             </div>
         </div>
     </div>
@@ -81,7 +81,7 @@
                     <p>Зная принципы взаимодействия с пользователем изнутри, мы разрабатываем собственные приложения для
                         iOS, которые обращаются к вашим клиентам. И построен на последних фреймворках и шаблонах iOS.
                     </p>
-                    <a href="">Узнать больше</a>
+                    <a href="./portfolio.html"><img src="./assets/img/Group 25.png" class="service3Link"></a>
                 </div>
                 <div class="service3">
                     <div class="angle3">
@@ -93,7 +93,7 @@
                     <p>Мы сознательно следуем рекомендациям по материальному дизайну для создания красивых приложений
                         для Android, одобренным сообществом Android. О, и мы знаем все лучшие библиотеки Android.
                     </p>
-                    <a href="">Узнать больше</a>
+                    <a href="./portfolio.html"><img src="./assets/img/Group 25.png" class="service3Link"></a>
                 </div>
                 <div class="service3">
                     <div class="angle3">
@@ -106,7 +106,7 @@
                         нативных приложений, которые одинаково привлекают нас и наших клиентов. Мы создаём приложения,
                         которые оставляют впечатление.
                     </p>
-                    <a href="">Узнать больше</a>
+                    <a href="./portfolio.html"><img src="./assets/img/Group 25.png" class="service3Link"></a>
                 </div>
                 <div class="service3">
                     <div class="angle3">
@@ -119,7 +119,7 @@
                         мощные приложения в самой сложной корпоративной среде. Мы знаем, как можно быистро добиться
                         невероятного успеха.
                     </p>
-                    <a href="">Узнать больше</a>
+                    <a href="./portfolio.html"><img src="./assets/img/Group 25.png" class="service3Link"></a>
                 </div>
             </div>
         </div>
@@ -138,7 +138,7 @@
                 <p>Снова и снова мы ставим себя на место конечных пользователей, чтобы сопереживать и прочувствовать
                     опыт, будь то приложения для iOS или Android.
                 </p>
-                <button>Связаться с нами</button>
+                <a href="#Form"><button>Связаться с нами</button></a>
             </div>
             <img src="./assets/img/freestocks-hRVrvH9-dG0-unsplash 1.jpg">
         </div>
@@ -150,14 +150,24 @@
             <img src="./assets/img/matthew-fournier-GIudaMzhA94-unsplash 1.png">
             <div class="aboutText aboutText3">
                 <h3>Что мы используем</h3>
-                <h5>mobile technologies</h5>
-                <p>Hybrid: ReactNative, Xamarin
-                    IOS: Swift, ObjectiveC
-                    Android: Java
-                </p>
-                <h5>Programming languages</h5>
-                <p>C#, SQL, JavaScript, Python</p>
-                <button>Связаться с нами</button>
+                <div class="aboutText3-item">
+                    <div class="item-index" onclick="Ind1(0)">1</div>
+                    <div class="aboutText3-item-text">
+                        <h5>mobile technologies <span class="item-index-arrow"><img src="./assets/img/Vector 95.png"></span></h5>
+                        <p>Hybrid: ReactNative, Xamarin <br>
+                            IOS: Swift, ObjectiveC <br>
+                            Android: Java
+                        </p>
+                    </div>
+                </div>
+                <div class="aboutText3-item">
+                    <div class="item-index" onclick="Ind1(1)">2</div>
+                    <div class="aboutText3-item-text">
+                        <h5>Programming languages <span class="item-index-arrow"><img src="./assets/img/Vector 95.png"></span></h5>
+                        <p>C#, SQL, JavaScript, Python</p>
+                    </div>
+                </div>
+                <a href="#Form"><button>Связаться с нами</button></a>
             </div>
         </div>
     </div>
@@ -166,59 +176,21 @@
 
 
     <div class="form" id="Form">
-        <div class="containerForm">
-            <div class="comment" data-aos="fade-up" data-aos-duration="700">
-                <div class="comment-controller-left" onclick="Plus(2)"></div>
-                <div class="comment-controller-right" onclick="Plus(1)"></div>
-                <div class="comment-slider">
-                    <div class="comment-item">
-                        <img class="face" src="./assets/img/аватар.png">
-                        <h3>Юрий Архипов</h3>
-                        <h5>Директор ТОО "Copyland"</h5>
-                        <p>Разработана очень удобная система приема и<br> обработки заказов, с ней реально
-                            высвобождается<br>
-                            огромное
-                            количество ресурсов.</p>
-                        <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
+        <div class="comment" style="background-image: url(./assets/img/image\ 44.jpg);background-size:cover;background-position: center;">
+        </div>
+            <form class="mail" action="#" method="post" id="sendform" enctype="multipart/form-data">
+                <fieldset>
+                    <h1>Есть вопросы? Задавайте!</h1>
+                    <input id="firstInput"placeholder="Имя" name="name" value="" type="text" class="required">
+                    <input type="text"  placeholder="E-mail" name="email" value="" size="40" type="email">
+                    <input id="lastInput" placeholder="Телефон" name="tel" value="" size="40" class="required" type="tel">
+                    <div class="textArea">
+                        <textarea placeholder="Напишите своё сообщение..." name="message"></textarea>
+                        <input class="telegram"  value="" name="sendMail" type="submit"/>
+                        <input class="add custom-file-input"  name="file" value="" type="file" />
                     </div>
-                    <div class="comment-item">
-                        <img class="face" src="./assets/img/Ellipse.png">
-                        <h3>КУТИЩЕВА Ю.А</h3>
-                        <h5>Директор HUB(Beeline) по развитию ИТ</h5>
-                        <p> Все наши пожелания и доработки выполнялись в обоснованные сроки и с должным качеством. Все это позволило нам совместно достичь запланированных результатов и повысить эффективность выгрузки ЭСФ в ИС ЭСФ.</p>
-                        <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
-                    </div>
-                    <div class="comment-item">
-                        <img class="face" src="./assets/img/Панель руководителя.png">
-                        <h3>АДИЛЬЖАН ХАМРАЕВ</h3>
-                        <h5>Директор ТОО "Fototeca"</h5>
-                        <p>Благодарим компанию «DevCloud Solutions» за профессионализм, оперативность и отзывчивость. Разработана очень удобная система приема и обработки заказов, с ней реально высвобождается огромное количество ресурсов. Особая благодарность Светлане Зенько, очень приятно с Вами работать.</p>
-                        <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
-                    </div>
-                    <div class="comment-item">
-                        <img class="face" src="./assets/img/FOTOTECA.jpg">
-                        <h3>АДИЛЬЖАН ХАМРАЕВ</h3>
-                        <h5>Директор ТОО "Fototeca"</h5>
-                        <p>Благодарим компанию «DevCloud Solutions» за профессионализм, оперативность и отзывчивость. Разработана очень удобная система приема и обработки заказов, с ней реально высвобождается огромное количество ресурсов. Особая благодарность Светлане Зенько, очень приятно с Вами работать.</p>
-                        <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="mail">
-                <h1>Есть вопросы? Задавайте!</h1>
-                <input id="firstInput" type="text" name="firstname" placeholder="Имя">
-                <input type="text" name="E-mail" placeholder="E-mail">
-                <input id="lastInput" type="text" name="phone" placeholder="Телефон">
-                <div class="textArea">
-                    <textarea placeholder="Напишите своё сообщение..."></textarea>
-                    <img class="telegram" src="./assets/img/телег.png">
-                    <img class="add" src="./assets/img/вложыить.png">
-                </div>
-            </div>
+                </fieldset>
+            </form>
         </div>
     </div>
 
@@ -260,7 +232,34 @@
     </footer>
 
     <script>
-        Call();
+
+
+        function Ind1(x){
+            let ind1 = document.getElementsByClassName("item-index")
+            let block1 = document.getElementsByClassName("aboutText3-item-text")
+            let arrow = document.getElementsByClassName('item-index-arrow')
+
+            if(ind1[x].classList.contains('indkActive')){
+                ind1[x].classList.remove('indkActive')
+            }
+            else{
+                ind1[x].classList.add('indkActive')
+            }
+
+            if(block1[x].classList.contains('textNone')){
+                block1[x].classList.remove('textNone')
+            }
+            else{
+                block1[x].classList.add('textNone')
+            }
+
+            if(arrow[x].classList.contains('item-index-arrow-active')){
+                arrow[x].classList.remove('item-index-arrow-active')
+            }
+            else{
+                arrow[x].classList.add('item-index-arrow-active')
+            }
+        }
     </script>
 </body>
 

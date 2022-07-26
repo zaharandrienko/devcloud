@@ -17,12 +17,14 @@
     float: right;
 }
 .contactsText p{
+    position: relative;
     font-size: 1vw;
     text-transform: uppercase;
     width: 100%;
     height: fit-content;
     padding: 0;
     margin-top: 15%;
+    white-space: pre;
 }
 
 
@@ -42,11 +44,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         order: 1;
-    }
-    .contacts img{
-        width: 100%;
-        float: right;
-        order: 2;
     }
     .contactsText p{
         font-size: 2vw;
@@ -71,11 +68,6 @@
     }
     .contactsText{
         grid-template-columns:1fr;
-    }
-    .contacts img{
-        width: 100%;
-        float: right;
-        order: 2;
     }
     .contactsText p{
         font-size: 5.5vw;

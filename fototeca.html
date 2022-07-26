@@ -56,13 +56,15 @@
 
     <div class="container">
         <div class="aboutAbout">
+            <h3 class="adaptiveTitle">Компания по производству фотокниг Fototeca</h3>
             <img src="./assets/img/Mask Group.png">
             <div class="aboutText">
                 <h3>Компания по производству фотокниг Fototeca</h3>
                 <p>Программное решение, автоматизирующее производство изделий – от создания дизайна до выдачи клиенту.
                     Была создана система, которая позволяет профессиональному фотографу – клиенту компании — формировать
-                    изделие (фотокнигу) в нужном формате и виде, оплатить и сразу передать заказ в производство.</p>
-                <button>Связаться с нами</button>
+                    изделие (фотокнигу) в нужном формате и виде, оплатить и сразу передать заказ в производство.
+                </p>
+                <a href="#Form"><button>Связаться с нами</button></a>
             </div>
         </div>
     </div>
@@ -92,14 +94,14 @@
     </div>
 
     <div class="container">
-        <div class="aboutAbout aboutAbout2" style="display: block;width: 100%;">
-            <div class="aboutText aboutText2" style="width: 30%;float: left;;">
+        <div class="aboutAboutAdaptive">
+            <div class="aboutTextAdaptive">
                 <h3>Наша цель</h3>
                 <p>Создать систему, которая позволит фотографам напрямую создавать заказы на производство фотокниг и других изделий через личный кабинет без участия менеджера.
                 </p>
-                <button>Связаться с нами</button>
+                <a href="#Form"><button>Связаться с нами</button></a>
             </div>
-            <img src="./assets/img/Frame 46.png" style="width: 60%;float: right;">
+            <img src="./assets/img/Frame 46.png">
         </div>
     </div>
 
@@ -108,10 +110,10 @@
             <div class="block"></div>
             <div class="blackText">
                 <h1>результат</h1>
-                <p>расширилась география деятельности компании, принимаются к производству заказы из других городов</p>
-                <p>сокращается время на работу с заказом, уменьшается нагрузка на персонал</p>
-                <p>клиентам компании предоставлен удобный интерфейс для формирования фотокниг и других изделий из собственных фотографий, хранение истории заказов, скидок, бонусов</p>
-                <p>расширение ассортимента предлагаемых услуг и производства</p>
+                <p class="main-line"><span></span>расширилась география деятельности компании, принимаются к производству заказы из других городов</p>
+                <p class="main-line"><span></span>сокращается время на работу с заказом, уменьшается нагрузка на персонал</p>
+                <p class="main-line"><span></span>клиентам компании предоставлен удобный интерфейс для формирования фотокниг и других изделий из собственных фотографий, хранение истории заказов, скидок, бонусов</p>
+                <p class="main-line"><span></span>расширение ассортимента предлагаемых услуг и производства</p>
             </div>
         </div>
     </div>
@@ -120,15 +122,15 @@
         <h1 class="title">Информационная система обеспечила</h1>
         <div class="aboutAbout aboutAbout2" style="margin-top: 0;">
             <div class="aboutText aboutText2" style="padding-top: 0;">
-                <p>создание изделий и фотокниг любой сложности, без посредников, напрямую на сайте компании-производителя
+                <p class="main-line"><span></span>создание изделий и фотокниг любой сложности, без посредников, напрямую на сайте компании-производителя
                 </p>
-                <p>при создании учитываются различные технологические этапы производства для разных изделий и материалы
+                <p class="main-line"><span></span>при создании учитываются различные технологические этапы производства для разных изделий и материалы
                 </p>
-                <p>система автоматически делает расчет конечного продукта, исходя из заданных параметров и расходных материалов на производство изделия или фотокниги – вид производства, тип бумаги, размер изделий, количество разворотов, и другие параметры
+                <p class="main-line"><span></span>система автоматически делает расчет конечного продукта, исходя из заданных параметров и расходных материалов на производство изделия или фотокниги – вид производства, тип бумаги, размер изделий, количество разворотов, и другие параметры
                 </p>
-                <p>использование личного кабинета профессионального фотографа, в котором создаются заказы, хранятся загруженные фотографии, ранее сформированные фотокниги, история заказов
+                <p class="main-line"><span></span>использование личного кабинета профессионального фотографа, в котором создаются заказы, хранятся загруженные фотографии, ранее сформированные фотокниги, история заказов
                 </p>
-                <p>использование накопительной системы бонусов для постоянных клиентов и промокодов при заказе изделий.
+                <p class="main-line"><span></span>использование накопительной системы бонусов для постоянных клиентов и промокодов при заказе изделий.
                 </p>
             </div>
             <img src="./assets/img/Frame 47.png" style="padding-top: 80px;">
@@ -150,58 +152,21 @@
 
     <div class="form" id="Form">
         <div class="containerForm">
-            <div class="comment" data-aos="fade-up" data-aos-duration="700">
-                <div class="comment-controller-left" onclick="Plus(2)"></div>
-                <div class="comment-controller-right" onclick="Plus(1)"></div>
-                <div class="comment-slider">
-                    <div class="comment-item">
-                        <img class="face" src="./assets/img/аватар.png">
-                        <h3>Юрий Архипов</h3>
-                        <h5>Директор ТОО "Copyland"</h5>
-                        <p>Разработана очень удобная система приема и<br> обработки заказов, с ней реально
-                            высвобождается<br>
-                            огромное
-                            количество ресурсов.</p>
-                        <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
-                    </div>
-                    <div class="comment-item">
-                        <img class="face" src="./assets/img/Ellipse.png">
-                        <h3>КУТИЩЕВА Ю.А</h3>
-                        <h5>Директор HUB(Beeline) по развитию ИТ</h5>
-                        <p> Все наши пожелания и доработки выполнялись в обоснованные сроки и с должным качеством. Все это позволило нам совместно достичь запланированных результатов и повысить эффективность выгрузки ЭСФ в ИС ЭСФ.</p>
-                        <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
-                    </div>
-                    <div class="comment-item">
-                        <img class="face" src="./assets/img/Панель руководителя.png">
-                        <h3>АДИЛЬЖАН ХАМРАЕВ</h3>
-                        <h5>Директор ТОО "Fototeca"</h5>
-                        <p>Благодарим компанию «DevCloud Solutions» за профессионализм, оперативность и отзывчивость. Разработана очень удобная система приема и обработки заказов, с ней реально высвобождается огромное количество ресурсов. Особая благодарность Светлане Зенько, очень приятно с Вами работать.</p>
-                        <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
-                    </div>
-                    <div class="comment-item">
-                        <img class="face" src="./assets/img/FOTOTECA.jpg">
-                        <h3>АДИЛЬЖАН ХАМРАЕВ</h3>
-                        <h5>Директор ТОО "Fototeca"</h5>
-                        <p>Благодарим компанию «DevCloud Solutions» за профессионализм, оперативность и отзывчивость. Разработана очень удобная система приема и обработки заказов, с ней реально высвобождается огромное количество ресурсов. Особая благодарность Светлане Зенько, очень приятно с Вами работать.</p>
-                        <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
-                    </div>
-                </div>
+            <div class="comment" style="background-image: url(./assets/img/image\ 44.jpg);background-size:cover;background-position: center;">
             </div>
-            <div class="mail">
-                <h1>Есть вопросы? Задавайте!</h1>
-                <input id="firstInput" type="text" name="firstname" placeholder="Имя">
-                <input type="text" name="E-mail" placeholder="E-mail">
-                <input id="lastInput" type="text" name="phone" placeholder="Телефон">
-                <div class="textArea">
-                    <textarea placeholder="Напишите своё сообщение..."></textarea>
-                    <img class="telegram" src="./assets/img/телег.png">
-                    <img class="add" src="./assets/img/вложыить.png">
-                </div>
-            </div>
+            <form class="mail" action="#" method="post" id="sendform" enctype="multipart/form-data">
+                <fieldset>
+                    <h1>Есть вопросы? Задавайте!</h1>
+                    <input id="firstInput"placeholder="Имя" name="name" value="" type="text" class="required">
+                    <input type="text"  placeholder="E-mail" name="email" value="" size="40" type="email">
+                    <input id="lastInput" placeholder="Телефон" name="tel" value="" size="40" class="required" type="tel">
+                    <div class="textArea">
+                        <textarea placeholder="Напишите своё сообщение..." name="message"></textarea>
+                        <input class="telegram"  value="" name="sendMail" type="submit"/>
+                        <input class="add custom-file-input"  name="file" value="" type="file" />
+                    </div>
+                </fieldset>
+            </form>
         </div>
     </div>
 
@@ -243,7 +208,7 @@
     </footer>
 
     <script>
-        Call();
+        // Call();
     </script>
 </body>
 

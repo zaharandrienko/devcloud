@@ -53,13 +53,12 @@
 
     <div class="container">
         <div class="contacts">
-            <div id="map"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.2196065590897!2d76.92295461548461!3d43.2468190791374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836ec99e6208e9%3A0xa93e7ea103580104!2z0JbQsNC80LHRi9C7INC606nRiNC10YHRliAxMTEsINCQ0LvQvNCw0YLRiyAwNTAwMDAsINCa0LDQt9Cw0YXRgdGC0LDQvQ!5e0!3m2!1suk!2sua!4v1654175857067!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
             <div class="contactsText">
-                    <p>Алматы, Жамбыла 111</p>
-                    <p>​+7 (727) 334-21-45​ <br>
-                        +7 (707) 998-93-90</p>
-                    <p>info@devcloud.kz</p>
-                    <p>Whatsapp telegram</p>
+                    <p><img src="./assets/img/icons8-местонахождение-пользователя-60 1.png" class="columnIcon2">Алматы, Жамбыла 111</p>
+                    <p><img src="./assets/img/icons8-телефон-96 (1) 1.png" class="columnIcon" style="top: 12px;">​+7 (727) 334-21-45​ <br>+7 (707) 998-93-90</p>
+                    <p><img src="./assets/img/icons8-сообщение-100 1.png" class="columnIcon">info@devcloud.kz</p>
+                    <p><img src="./assets/img/icons8-whatsapp 1.png" class="columnIcon">Whatsapp <span > <img src="./assets/img/icons8-телеграмма-app (2) 1.png" style="height: 20px; margin-left: 10px;"> </span>    Telegram</p>
             </div>
         </div>
     </div>
@@ -70,58 +69,21 @@
 
     <div class="form" id="Form">
         <div class="containerForm">
-            <div class="comment" data-aos="fade-up" data-aos-duration="700">
-                <div class="comment-controller-left" onclick="Plus(2)"></div>
-                <div class="comment-controller-right" onclick="Plus(1)"></div>
-                <div class="comment-slider">
-                    <div class="comment-item">
-                        <img class="face" src="./assets/img/аватар.png">
-                        <h3>Юрий Архипов</h3>
-                        <h5>Директор ТОО "Copyland"</h5>
-                        <p>Разработана очень удобная система приема и<br> обработки заказов, с ней реально
-                            высвобождается<br>
-                            огромное
-                            количество ресурсов.</p>
-                        <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
-                    </div>
-                    <div class="comment-item">
-                        <img class="face" src="./assets/img/Ellipse.png">
-                        <h3>КУТИЩЕВА Ю.А</h3>
-                        <h5>Директор HUB(Beeline) по развитию ИТ</h5>
-                        <p> Все наши пожелания и доработки выполнялись в обоснованные сроки и с должным качеством. Все это позволило нам совместно достичь запланированных результатов и повысить эффективность выгрузки ЭСФ в ИС ЭСФ.</p>
-                        <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
-                    </div>
-                    <div class="comment-item">
-                        <img class="face" src="./assets/img/Панель руководителя.png">
-                        <h3>АДИЛЬЖАН ХАМРАЕВ</h3>
-                        <h5>Директор ТОО "Fototeca"</h5>
-                        <p>Благодарим компанию «DevCloud Solutions» за профессионализм, оперативность и отзывчивость. Разработана очень удобная система приема и обработки заказов, с ней реально высвобождается огромное количество ресурсов. Особая благодарность Светлане Зенько, очень приятно с Вами работать.</p>
-                        <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
-                    </div>
-                    <div class="comment-item">
-                        <img class="face" src="./assets/img/FOTOTECA.jpg">
-                        <h3>АДИЛЬЖАН ХАМРАЕВ</h3>
-                        <h5>Директор ТОО "Fototeca"</h5>
-                        <p>Благодарим компанию «DevCloud Solutions» за профессионализм, оперативность и отзывчивость. Разработана очень удобная система приема и обработки заказов, с ней реально высвобождается огромное количество ресурсов. Особая благодарность Светлане Зенько, очень приятно с Вами работать.</p>
-                        <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
-                    </div>
-                </div>
+            <div class="comment" style="background-image: url(./assets/img/image\ 44.jpg);background-size:cover;background-position: center;">
             </div>
-            <div class="mail">
-                <h1>Есть вопросы? Задавайте!</h1>
-                <input id="firstInput" type="text" name="firstname" placeholder="Имя">
-                <input type="text" name="E-mail" placeholder="E-mail">
-                <input id="lastInput" type="text" name="phone" placeholder="Телефон">
-                <div class="textArea">
-                    <textarea placeholder="Напишите своё сообщение..."></textarea>
-                    <img class="telegram" src="./assets/img/телег.png">
-                    <img class="add" src="./assets/img/вложыить.png">
-                </div>
-            </div>
+            <form class="mail" action="#" method="post" id="sendform" enctype="multipart/form-data">
+                <fieldset>
+                    <h1>Есть вопросы? Задавайте!</h1>
+                    <input id="firstInput"placeholder="Имя" name="name" value="" type="text" class="required">
+                    <input type="text"  placeholder="E-mail" name="email" value="" size="40" type="email">
+                    <input id="lastInput" placeholder="Телефон" name="tel" value="" size="40" class="required" type="tel">
+                    <div class="textArea">
+                        <textarea placeholder="Напишите своё сообщение..." name="message"></textarea>
+                        <input class="telegram"  value="" name="sendMail" type="submit"/>
+                        <input class="add custom-file-input"  name="file" value="" type="file" />
+                    </div>
+                </fieldset>
+            </form>
         </div>
     </div>
 
@@ -162,8 +124,9 @@
         <span class="lastTitle">© Devcloud Solutions, Inc. 2021. We love our users!</span>
     </footer>
 
-    <script>
-        Call();
+    <!-- <script>
+        // Call();
+
 
         function initMap() {
     // The location of Uluru
@@ -184,7 +147,7 @@
 
     </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDls1OQsK3fP6M3f4J5fkiwhSzGAoD9BKw&callback=initMap&v=weekly" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDls1OQsK3fP6M3f4J5fkiwhSzGAoD9BKw&callback=initMap&v=weekly" defer></script> -->
 
 
 </body>
