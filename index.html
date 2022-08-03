@@ -6,16 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devcloud</title>
+    <link rel="icon" href="./favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
-    <script src="./main.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="js/engine.js"></script>
+    <script src="./main.js"></script>
 </head>
 
 <body>
@@ -63,10 +65,10 @@
 
     <div class="container home" id="home">
         <div class="titleLink">
-            <h1 data-aos="fade-up" data-aos-duration="400">Компания по разработке<br>програмного обеспечения</h1>
-            <a href="#Form"><button data-aos="fade-up" data-aos-duration="700">Запросить консультацию</button></a>
+            <h1>Компания по разработке<br>програмного обеспечения</h1>
+            <a href="#Form"><button id="counter">Запросить консультацию</button></a>
             <br>
-            <a href="#Form"><img src="./assets/img/arrow (1).png" data-aos="fade-up" data-aos-duration="1000"></a>
+            <a href="#Form"><img src="./assets/img/arrow (1).png" ></a>
         </div>
         <div class="filter"></div>
         <video autoplay muted loop class="video">
@@ -87,24 +89,24 @@
 
 
     <div class="containerNumbers" id="containerScroll">
-        <div class="numbers" data-aos="fade-up" data-aos-duration="700">
+        <div class="numbers">
             <div class="number">
-                <h1>98%</h1>
+                <h1><span class="number-anim" data-num="98">1</span>%</h1>
                 <p>завершенных проектов
                     успешно</p>
             </div>
             <div class="number secondNumber">
-                <h1>30</h1>
+                <h1><span class="number-anim" data-num="30">1</span></h1>
                 <p>календарных дней до
                     первого релиза</p>
             </div>
             <div class="number">
-                <h1>5+</h1>
+                <h1><span class="number-anim" data-num="5">1</span>+</h1>
                 <p>дней от идеи до
                     готовой концепции</p>
             </div>
             <div class="number lastNumber">
-                <h1>+20%</h1>
+                <h1>+<span class="number-anim" data-num="20">1</span>%</h1>
                 <p>к эффективности бизнеса</p>
             </div>
         </div>
@@ -126,7 +128,7 @@
 
     <div class="container">
         <div class="containerSlider">
-            <h1 class="title" data-aos="fade-up" data-aos-duration="700">Основные услуги</h1>
+            <h1 class="title">Основные услуги</h1>
             <div class="services">
                 <div class="service">
                     <div class="angle">
@@ -181,25 +183,142 @@
         </div>
 
         <div class="container">
-            <h1 class="title" data-aos="fade-up" data-aos-duration="700">Наши проекти</h1>
-            <div class="about2">
-                <img src="./assets/img/true-agency-Q8otix2SVko-unsplash 1.jpg">
-                <div class="text2">
-                    <h1 class="up">Компания по производству фотокниг Fototeca</h1>
-                    <p>Программное решение, автоматизирующее производство изделий – от создания дизайна до выдачи
-                        клиенту.
-                        Была создана система, которая позволяет профессиональному фотографу – клиенту компании —
-                        формировать
-                        изделие (фотокнигу) в нужном формате и виде, оплатить и сразу передать заказ в производство.
-                    </p>
-                    <a href="./fototeca.html"><img src="./assets/img/Group 25.png"></a>
+            <h1 class="title">Наши проекти</h1>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="about2">
+                            <div class="about2-img" style="background-image: url(./assets/img/true-agency-Q8otix2SVko-unsplash\ 1.jpg) ;"></div>
+                            <div class="text2">
+                                <h1 class="up">Компания по производству фотокниг Fototeca</h1>
+                                <p>Программное решение, автоматизирующее производство изделий – от создания дизайна до выдачи
+                                    клиенту.
+                                    Была создана система, которая позволяет профессиональному фотографу – клиенту компании —
+                                    формировать
+                                    изделие (фотокнигу) в нужном формате и виде, оплатить и сразу передать заказ в производство.
+                                </p>
+                                <a href="./fototeca.html"><img src="./assets/img/Group 25.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about2">
+                            <div class="about2-img" style="background-image: url(./assets/img/image\ 266.png) ;"></div>
+                            <div class="text2">
+                                <h1 class="up">Система электронного документооборота | СЭД
+                                </h1>
+                                <p>Программа для внутреннего документооборота компании — ускоренная обработка документов, согласование, систематизация и хранение.В основе разработки системы BizDoc — современный инструментарий, который позволит вам гибко настраивать и адаптировать систему под бизнес-задачи вашей компании.
+                                </p>
+                                <a href="./bizdoc.html"><img src="./assets/img/Group 25.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about2">
+                            <div class="about2-img" style="background-image: url(./assets/img/image\ 511.png) ;"></div>
+                            <div class="text2">
+                                <h1 class="up">Автоматическая обработка
+                                </h1>
+                                <p>Программа T-Data  разработана для интернет-магазинов, для аккумуляции данных из различных источников, прайс-листов и поставщиков. 
+                                </p>
+                                <a href="./shop.html"><img src="./assets/img/Group 25.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about2">
+                            <div class="about2-img" style="background-image: url(./assets/img/image\ 35\ \(1\).png) ;"></div>
+                            <div class="text2">
+                                <h1 class="up">Цифровизация в строительстве | Панель Руководителя
+                                </h1>
+                                <p>Разработана управленческая панель для руководителя строительной компании и мобильное веб-решение для управления строительными проектами
+                                </p>
+                                <a href="./tablet.html"><img src="./assets/img/Group 25.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about2">
+                            <div class="about2-img" style="background-image: url(./assets/img/printer-1024x768\ 11.png) ;"></div>
+                            <div class="text2">
+                                <h1 class="up">Автоматизация копировательной сети
+                                </h1>
+                                <p>Разработана информационная система для управления процессами, контроля и отслеживания работы полиграфической компании
+                                </p>
+                                <a href="./copyland.html"><img src="./assets/img/Group 25.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about2">
+                            <div class="about2-img" style="background-image: url(./assets/img/image\ 411.png) ;"></div>
+                            <div class="text2">
+                                <h1 class="up">Автоматизация туристической фирмы
+                                </h1>
+                                <p>Внедрена система автоматического расчета туров. Разработана информационная система для управления процессами, контроля и отслеживания работы полиграфической компании. Даное приложение адаптировано под существующие процессы компании.
+                                </p>
+                                <a href="./tour.html"><img src="./assets/img/Group 25.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about2">
+                            <div class="about2-img" style="background-image: url(./assets/img/adeolu-eletu-unRkg2jH1j0-unsplash\ 1.png) ;"></div>
+                            <div class="text2">
+                                <h1 class="up">Автоматизированная выгрузка счет-фактур на портал esf.gov.kz
+                                </h1>
+                                <p>Гибкий и удобный инструмент для интеграции биллинговых систем с порталом esf.gov.kz. Синхронизация справочников биллинговой системы. Формирование списка счетов-фактур для отправки в систему ИС ЭСФ.
+                                </p>
+                                <a href="./esf.html"><img src="./assets/img/Group 25.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about2">
+                            <div class="about2-img" style="background-image: url(./assets/img/annie-spratt-MChSQHxGZrQ-unsplash\ 11.png) ;"></div>
+                            <div class="text2">
+                                <h1 class="up">X-Factoring
+                                </h1>
+                                <p>Автоматизированная система управления факторинговыми операциями SofIA Factoring. Имеющиеся интерфейсы с бухгалтерской учетной системой и системой банк-клиент повышают уровень автоматической обработки и позволяют минимизировать число ошибок.
+                                </p>
+                                <a href="./x-factoring.html"><img src="./assets/img/Group 25.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about2">
+                            <div class="about2-img" style="background-image: url(./assets/img/annie-spratt-MChSQHxGZrQ-unsplash\ 1.jpg) ;"></div>
+                            <div class="text2">
+                                <h1 class="up">Приложение для пациентов с диагностированным диабетом
+                                </h1>
+                                <p>Мобильное приложение,  которое поможет пользователям контролировать состояние здоровья (сахар, артериальное давление, гемоглобин), отслеживать процесс лечения и приема лекарств.
+                                </p>
+                                <a href="./help.html"><img src="./assets/img/Group 25.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about2">
+                            <div class="about2-img" style="background-image: url(./assets/img/image\ 5331.jpg) ;"></div>
+                            <div class="text2">
+                                <h1 class="up">Приложение для водителей Android и iOS
+                                </h1>
+                                <p>Devcloud Solutions разработает систему мобильных приложений Android и iOS для водителей, которая позволит держать свой баланс под полным контролем и снять деньги в любое удобное время.
+                                </p>
+                                <a href="./drive.html"><img  src="./assets/img/Group 25.png"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="swiper-pagination"></div>  
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>        
             </div>
             <a href="./portfolio.html"><button  class="about2Button">Посмотреть все проекты</button></a>
         </div>
 
         <div class="container">
-            <h1 class="title" data-aos="fade-up" data-aos-duration="700">Наш процесс работы</h1>
+            <h1 class="title">Наш процесс работы</h1>
             <div class="about3">
                 <div class="text3-container">
                     <div class="text3">
@@ -283,14 +402,14 @@
         </div>`
 
         <div class="container">
-            <h1 class="title" data-aos="fade-up" data-aos-duration="700">Инструменты и технологии</h1>
+            <h1 class="title">Инструменты и технологии</h1>
             <div class="containerTechnologies">
                 <img src="./assets/img/Frame 1.png" class="technologies">
             </div>
         </div>
 
         <div class="container">
-            <h1 class="title" data-aos="fade-up" data-aos-duration="700">Наш опыт</h1>
+            <h1 class="title">Наш опыт</h1>
             <div class="services2">
                 <div class="service2">
                     <img src="./assets/img/leio-mclaren-leiomclaren-com-jEgQpfkHEWY-unsplash 1.png">
@@ -327,7 +446,7 @@
         </div>
 
         <div class="container">
-            <h1 class="title" data-aos="fade-up" data-aos-duration="700">С кем мы работаем</h1>
+            <h1 class="title">С кем мы работаем</h1>
             <div class="containerTechnologies">
                 <img src="./assets/img/Frame 44.png" class="technologies">
             </div>
@@ -339,7 +458,7 @@
 
         <div class="form" id="Form">
             <div class="containerForm">
-                <div class="comment" data-aos="fade-up" data-aos-duration="700">
+                <div class="comment">
                     <div class="comment-controller-left" onclick="Plus(2)"></div>
                     <div class="comment-controller-right" onclick="Plus(1)"></div>
                     <div class="comment-slider">
@@ -352,7 +471,7 @@
                                 огромное
                                 количество ресурсов.</p>
                             <img class="stars" src="./assets/img/Звезды.png">
-                            <h6>21.06.20</h6>
+                            <h6>21.06.2017</h6>
                         </div>
                         <div class="comment-item">
                             <img class="face" src="./assets/img/Ellipse.png">
@@ -360,16 +479,16 @@
                             <h5>Директор HUB(Beeline) по развитию ИТ</h5>
                             <p> Все наши пожелания и доработки выполнялись в обоснованные сроки и с должным качеством. Все это позволило нам совместно достичь запланированных результатов и повысить эффективность выгрузки ЭСФ в ИС ЭСФ.</p>
                             <img class="stars" src="./assets/img/Звезды.png">
-                            <h6>21.06.20</h6>
+                            <h6>15.09.2016</h6>
                         </div>
                         <div class="comment-item">
-                            <img class="face" src="./assets/img/Панель руководителя.png">
+                            <img class="face" src="./assets/img/X-Factoring.jpg">
                             <h3>Толеген Мулдашев</h3>
                             <h5>CEO ТОО «First Factoring Company»</h5>
                             <p>Компанией была разработана и внедрена автоматизированная система управления факторинговыми операциями SofIA Factoring. 
                                 Система является реально незаменимым инструментом, существенно повышающим эффективность управления факторинговой компанией.</p>
                             <img class="stars" src="./assets/img/Звезды.png">
-                            <h6>21.06.20</h6>
+                            <h6>11.03.2014</h6>
                         </div>
                         <div class="comment-item">
                             <img class="face" src="./assets/img/FOTOTECA.jpg">
@@ -377,22 +496,38 @@
                             <h5>Директор ТОО "Fototeca"</h5>
                             <p>Благодарим компанию «DevCloud Solutions» за профессионализм, оперативность и отзывчивость. Разработана очень удобная система приема и обработки заказов, с ней реально высвобождается огромное количество ресурсов. Особая благодарность Светлане Зенько, очень приятно с Вами работать.</p>
                             <img class="stars" src="./assets/img/Звезды.png">
-                            <h6>21.06.20</h6>
+                            <h6>25.10.2017</h6>
+                        </div>
+                        <div class="comment-item">
+                            <img class="face" style="border-radius: 0px;padding-top: 3%;" src="./assets/img/лого (2).jpg">
+                            <h3>ОЛЕГ МЕРКЕР</h3>
+                            <h5>Руководитель тендерного департамента, ТОО «Абди Ибрахим Глобал Фарм»</h5>
+                            <p>Приложение очень удобное для ведения дневника приема лекарств. Очень важный момент, что данное приложение очень просто в использовании -«use-friendly» и даже пожилым пользователям все понятно и удобно. Большое спасибо всей команде за успешно реализованной проект!</p>
+                            <img class="stars" src="./assets/img/Звезды.png">
+                            <h6>27.04.2022</h6>
+                        </div>
+                        <div class="comment-item">
+                            <img class="face" style="border-radius: 0px;" src="./assets/img/Такси.png">
+                            <h3>СЕЙТБЕК У.А.</h3>
+                            <h5>Директор ТОО «Astana park»</h5>
+                            <p>Отличный сервис, быстрая реакция на решение задач, рады сотрудничать.</p>
+                            <img class="stars" src="./assets/img/Звезды.png">
+                            <h6>20.05.2022</h6>
                         </div>
                     </div>
                 </div>
-                <form class="mail" action="#" method="post" id="sendform" enctype="multipart/form-data">
-                    <fieldset>
-                        <h1>Есть вопросы? Задавайте!</h1>
-                        <input id="firstInput"placeholder="Имя" name="name" value="" type="text" class="required">
-                        <input type="text"  placeholder="E-mail" name="email" value="" size="40" type="email">
-                        <input id="lastInput" placeholder="Телефон" name="tel" value="" size="40" class="required" type="tel">
+                <form class="mail" enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
+                    <h1 class="mail-massage">Есть вопросы? Задавайте!</h1>
+                    <div class="mail-inputs">
+                        <input id="firstInput"placeholder="Имя" name="name" type="text" class="required" required>
+                        <input  placeholder="E-mail" name="email" type="email">
+                        <input id="lastInput" placeholder="Телефон" name="phone"  class="required" type="tel" required>
                         <div class="textArea">
-                            <textarea placeholder="Напишите своё сообщение..." name="message"></textarea>
-                            <input class="telegram"  value="" name="sendMail" type="submit"/>
-                            <input class="add custom-file-input"  name="file" value="" type="file"/>
+                            <textarea placeholder="Напишите своё сообщение..." name="text"></textarea>
+                            <input class="telegram" type="submit"/>
+                            <input class="add custom-file-input"  type="file" name="myfile[]" multiple id="myfile"/>
                         </div>
-                    </fieldset>
+                    </div>
                 </form>
             </div>
         </div>
@@ -412,10 +547,10 @@
                     </div>
                 </div>
                 <div class="column column2">
-                    <p>​<img src="./assets/img/icons8-телефон-96 (1) 1.png" class="columnIcon" style="top: 20px;">+7 (727) 334-21-45​</p>
-                    <p>+7 (707) 998-93-90</p>
+                    <p>​<img src="./assets/img/icons8-телефон-96 (1) 1.png" class="columnIcon" style="top: 20px;">+7 (777) 166-11-44​</p>
+                    <p>+7 (727) 344-93-90</p>
                     <p>​<img src="./assets/img/icons8-почта-100 1.png" class="columnIcon">info@devcloud.kz</p>
-                    <p><img src="./assets/img/icons8-whatsapp 1.png" class="columnIcon">Whatsapp <img src="./assets/img/icons8-телеграмма-app (2) 1.png" class="columnIcon" style="left: 80px;">        Telegram</p>
+                    <p><img src="./assets/img/icons8-whatsapp 1.png" class="columnIcon"><a href="https://wa.me/77771661144" target="_blank">Whatsapp </a> <a href="https://t.me/DevCloudSolutions" target="_blank"><span><img src="./assets/img/icons8-телеграмма-app (2) 1.png" style="height: 20px; margin-left: 10px;"> </span>    Telegram</a></p>
                 </div>
                 <div class="column column3">
                     <a href="./index.html"><p>Главная</p></a>
@@ -446,8 +581,71 @@
         <script>
             Active(0);
             Control(1);
-            AOS.init();
-            // Call();
+            
+
+            var time = 2,
+                cc = 1;
+            $(window).scroll(function() {
+            $('#counter').each(function() {
+                var
+                cPos = $(this).offset().top,
+                topWindow = $(window).scrollTop();
+                if (cPos < topWindow + 200) {
+                if (cc < 2) {
+                    $(".number-anim").addClass("viz");
+                    $('span').each(function() {
+                    var
+                        i = 1,
+                        num = $(this).data('num'),
+                        step = 1000 * time / num,
+                        that = $(this),
+                        int = setInterval(function() {
+                        if (i <= num) {
+                            that.html(i);
+                        } else {
+                            cc = cc + 2;
+                            clearInterval(int);
+                        }
+                        i++;
+                        }, step);
+                    });
+                }
+                }
+            });
+            });
+
+
+
+            function send(event, php) {
+                console.log("Отправка запроса");
+                event.preventDefault ? event.preventDefault() : event.returnValue = false;
+                var req = new XMLHttpRequest();
+                req.open('POST', php, true);
+                req.onload = function () {
+                    var mas = document.getElementsByClassName('mail-massage')
+                    var mail = document.getElementsByClassName('mail-inputs')
+                    if (req.status >= 200 && req.status < 400) {
+                        json = JSON.parse(this.response); // Ебанный internet explorer 11
+                        console.log(json);
+
+                        // ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
+                        if (json.result == "success") {
+                            // Если сообщение отправлено
+                            // alert("Сообщение отправлено");
+                            mail[0].classList.add('mail-none')
+                            mas[0].innerHTML = "Сообщение отправлено"
+                        } else {
+                            // Если произошла ошибка
+                            alert("Ошибка. Сообщение не отправлено");
+                        }
+                        // Если не удалось связаться с php файлом
+                    } else { alert("Ошибка сервера. Номер: " + req.status); }
+                };
+
+                // Если не удалось отправить запрос. Стоит блок на хостинге
+                req.onerror = function () { alert("Ошибка отправки запроса"); };
+                req.send(new FormData(event.target));
+            }
 
 
             var x = true;
@@ -460,6 +658,28 @@
                 if (pageYOffset < 1) {
                     toolbarBack[0].classList.remove('scroll');
                 } 
+            });
+
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
             });
 
 

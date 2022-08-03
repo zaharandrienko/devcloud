@@ -1,63 +1,72 @@
- <?php
-$to = 'info@devcloud.kz';
+<?php
+// Файлы phpmailer
+require 'phpmailer/PHPMailer.php';
+require 'phpmailer/SMTP.php';
+require 'phpmailer/Exception.php';
 
-if ( isset( $_POST['sendMail'] ) ) {
-  $name  = substr( $_POST['name'], 0, 64 );
-  $tel = substr( $_POST['tel'], 0, 64 );
-  $email   = substr( $_POST['email'], 0, 64 );
-  $message = substr( $_POST['message'], 0, 250 );
- 
+// Переменные, которые отправляет пользователь
+$name = $_POST['name'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$text = $_POST['text'];
+$file = $_FILES['myfile'];
 
-  if ( !empty( $_FILES['file']['tmp_name'] ) and $_FILES['file']['error'] == 0 ) {
-    $filepath = $_FILES['file']['tmp_name'];
-    $filename = $_FILES['file']['name'];
-  } else {
-    $filepath = '';
-    $filename = '';
-  }
- 
-  $body = "Имя:\r\n".$name."\r\n\r\n";
-  $body .= "Контактный номер:\r\n".$tel."\r\n\r\n";
-  $body .= "E-mail:\r\n".$email."\r\n\r\n";
-  $body .= "Описание заказа:\r\n".$message;
- 
-  send_mail($to, $body, $email, $filepath, $filename);
+// Формирование самого письма
+$title = "Заявка с сайта devcloud.kz";
+$body = "
+<h2>Новая заявка</h2><br><br>
+<b>Имя:</b> $name<br><br>
+<b>Почта:</b> $email<br><br>
+<b>Телефон:</b> $phone<br><br>
+<b>Сообщение:</b><br>$text
+";
 
+// Настройки PHPMailer
+$mail = new PHPMailer\PHPMailer\PHPMailer();
+try {
+    $mail->isSMTP();   
+    $mail->CharSet = "UTF-8";
+    $mail->SMTPAuth   = true;
+    //$mail->SMTPDebug = 2;
+    $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
+
+    // Настройки вашей почты
+    $mail->Host = 'ssl://smtp.mail.ru';
+    $mail->Username = 'info@devcloud.kz';
+    $mail->Password = 'Proj3ct!';
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port       = 465;
+    $mail->setFrom('info@devcloud.kz', $name); // Адрес самой почты и имя отправителя
+
+    // Получатель письма
+    $mail->addAddress('info@devcloud.kz');  
+
+    // Прикрипление файлов к письму
+if (!empty($file['name'][0])) {
+    for ($ct = 0; $ct < count($file['tmp_name']); $ct++) {
+        $uploadfile = tempnam(sys_get_temp_dir(), sha1($file['name'][$ct]));
+        $filename = $file['name'][$ct];
+        if (move_uploaded_file($file['tmp_name'][$ct], $uploadfile)) {
+            $mail->addAttachment($uploadfile, $filename);
+            $rfile[] = "Файл $filename прикреплён";
+        } else {
+            $rfile[] = "Не удалось прикрепить файл $filename";
+        }
+    }   
+}
+// Отправка сообщения
+$mail->isHTML(true);
+$mail->Subject = $title;
+$mail->Body = $body;    
+
+// Проверяем отравленность сообщения
+if ($mail->send()) {$result = "success";} 
+else {$result = "error";}
+
+} catch (Exception $e) {
+    $result = "error";
+    $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
 
-
-
-
-// Вспомогательная функция для отправки почтового сообщения с вложением
-function send_mail($to, $body, $email, $filepath, $filename)
-{
-  $subject = 'Заявка';
-  $boundary = "--".md5(uniqid(time())); // генерируем разделитель
-  $headers = "From: ".$email."\r\n";   
-  $headers .= "MIME-Version: 1.0\r\n";
-  $headers .="Content-Type: multipart/mixed; boundary=\"".$boundary."\"\r\n";
-  $multipart = "--".$boundary."\r\n";
-  $multipart .= "Content-type: text/plain; charset=\"utf-8\"\r\n";
-  $multipart .= "Content-Transfer-Encoding: quoted-printable\r\n\r\n";
-
-  $body = $body."\r\n\r\n";
- 
-  $multipart .= $body;
- 
-  $file = '';
-  if ( !empty( $filepath ) ) {
-    $fp = fopen($filepath, "r");
-    if ( $fp ) {
-      $content = fread($fp, filesize($filepath));
-      fclose($fp);
-      $file .= "--".$boundary."\r\n";
-      $file .= "Content-Type: application/octet-stream\r\n";
-      $file .= "Content-Transfer-Encoding: base64\r\n";
-      $file .= "Content-Disposition: attachment; filename=\"".$filename."\"\r\n\r\n";
-      $file .= chunk_split(base64_encode($content))."\r\n";
-    }
-  }
-  $multipart .= $file."--".$boundary."--\r\n";
-	mail($to, $subject, $multipart, $headers);
-}
-?>
+// Отображение результата
+echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);

@@ -26,12 +26,12 @@ function Plus(e){
         Ind = Ind - 1;
     }
 
-    if(Ind > 4){
+    if(Ind > 6){
         Ind = 1
     }
 
     if(Ind < 1){
-        Ind = 4
+        Ind = 6
     }
     Team(Ind);
 }
@@ -42,24 +42,48 @@ function Team(x){
         item[0].classList.remove('comment-slider2');
         item[0].classList.remove('comment-slider3');
         item[0].classList.remove('comment-slider4');
+        item[0].classList.remove('comment-slider5');
+        item[0].classList.remove('comment-slider6');
     }
 
     if(x == 2){
         item[0].classList.add('comment-slider2');
         item[0].classList.remove('comment-slider3');
         item[0].classList.remove('comment-slider4');
+        item[0].classList.remove('comment-slider5');
+        item[0].classList.remove('comment-slider6');
     }
 
     if(x == 3){
         item[0].classList.add('comment-slider3');
         item[0].classList.remove('comment-slider2');
         item[0].classList.remove('comment-slider4');
+        item[0].classList.remove('comment-slider5');
+        item[0].classList.remove('comment-slider6');
     }
 
     if(x == 4){
         item[0].classList.add('comment-slider4');
         item[0].classList.remove('comment-slider2');
         item[0].classList.remove('comment-slider3');
+        item[0].classList.remove('comment-slider5');
+        item[0].classList.remove('comment-slider6');
+    }
+
+    if(x == 5){
+        item[0].classList.remove('comment-slider4');
+        item[0].classList.remove('comment-slider2');
+        item[0].classList.remove('comment-slider3');
+        item[0].classList.add('comment-slider5');
+        item[0].classList.remove('comment-slider6');
+    }
+
+    if(x == 6){
+        item[0].classList.remove('comment-slider4');
+        item[0].classList.remove('comment-slider2');
+        item[0].classList.remove('comment-slider3');
+        item[0].classList.remove('comment-slider5');
+        item[0].classList.add('comment-slider6');
     }
 }
 
@@ -334,3 +358,5 @@ function Work4(x){
         block1[2].classList.add('textWorkNone')
     }
 }
+
+

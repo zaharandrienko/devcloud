@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devcloud</title>
+    <link rel="icon" href="./favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
@@ -50,7 +51,7 @@
         </ul>
     </header>
 
-    <div class="container">
+    <div class="container" id="portfolio">
         <h1 class="title">Портфолио</h1>
         <div class="portfolio">
             <div class="case"
@@ -128,22 +129,19 @@
                 </div>
             </div>
             <div class="case"
-                style="background-image: url(./assets/img/Wooden\ Hand\ iPhone\ 12\ Pro.png);background-repeat: no-repeat;background-size:120%;background-position: 160% 10%;">
+                style="background-image: url(./assets/img/annie-spratt-MChSQHxGZrQ-unsplash\ 1.jpg);background-repeat: no-repeat;background-size:cover;background-position: center;">
                 <div class="portfolioText">
-                    <h1>Приложение для пациентов
-                        с диагностированным диабетом
+                    <h1>Приложение для пациентов с диагностированным диабетом
                     </h1>
-                    <p>Мобильное приложениекоторое поможет пользователям
-                        контролировать состояние здоровья, отслеживать
-                        процесс лечения и приема лекарств.</p>
+                    <p class="lust-case">Мобильное приложение,  которое поможет пользователям контролировать состояние здоровья (сахар, артериальное давление, гемоглобин), отслеживать процесс лечения и приема лекарств</p>
                     <a href="./help.html"><button>Узнать</button></a>
                 </div>
             </div>
             <div class="case"
-                style="background-image: url(./assets/img/Frame\ 77.png);background-size:cover;background-position: center;">
+                style="background-image: url(./assets/img/image\ 5331.jpg);background-size:cover;background-position: center;">
                 <div class="portfolioText">
-                    <h1>Мобильное приложение для водителей </h1>
-                    <p>Мобильное приложение для водителей позволяет держать свой баланс под полным контролем.</p>
+                    <h1>Приложение для водителей Android и iOS</h1>
+                    <p>Devcloud Solutions разработает систему мобильных приложений Android и iOS для водителей, которая позволит держать свой баланс под полным контролем и снять деньги в любое удобное время</p>
                     <a href="./drive.html"><button>Узнать</button></a>
                 </div>
             </div>
@@ -156,7 +154,7 @@
 
     <div class="form" id="Form">
         <div class="containerForm">
-            <div class="comment" data-aos="fade-up" data-aos-duration="700">
+            <div class="comment">
                 <div class="comment-controller-left" onclick="Plus(2)"></div>
                 <div class="comment-controller-right" onclick="Plus(1)"></div>
                 <div class="comment-slider">
@@ -164,12 +162,12 @@
                         <img class="face" src="./assets/img/аватар.png">
                         <h3>Юрий Архипов</h3>
                         <h5>Директор ТОО "Copyland"</h5>
-                        <p>Разработана очень удобная система приема и<br> обработки заказов, с ней реально
-                            высвобождается<br>
+                        <p>Разработана очень удобная система приема и обработки заказов, с ней реально
+                            высвобождается
                             огромное
                             количество ресурсов.</p>
                         <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
+                        <h6>21.06.2017</h6>
                     </div>
                     <div class="comment-item">
                         <img class="face" src="./assets/img/Ellipse.png">
@@ -177,15 +175,16 @@
                         <h5>Директор HUB(Beeline) по развитию ИТ</h5>
                         <p> Все наши пожелания и доработки выполнялись в обоснованные сроки и с должным качеством. Все это позволило нам совместно достичь запланированных результатов и повысить эффективность выгрузки ЭСФ в ИС ЭСФ.</p>
                         <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
+                        <h6>15.09.2016</h6>
                     </div>
                     <div class="comment-item">
-                        <img class="face" src="./assets/img/Панель руководителя.png">
-                        <h3>АДИЛЬЖАН ХАМРАЕВ</h3>
-                        <h5>Директор ТОО "Fototeca"</h5>
-                        <p>Благодарим компанию «DevCloud Solutions» за профессионализм, оперативность и отзывчивость. Разработана очень удобная система приема и обработки заказов, с ней реально высвобождается огромное количество ресурсов. Особая благодарность Светлане Зенько, очень приятно с Вами работать.</p>
+                        <img class="face" src="./assets/img/X-Factoring.jpg">
+                        <h3>Толеген Мулдашев</h3>
+                        <h5>CEO ТОО «First Factoring Company»</h5>
+                        <p>Компанией была разработана и внедрена автоматизированная система управления факторинговыми операциями SofIA Factoring. 
+                            Система является реально незаменимым инструментом, существенно повышающим эффективность управления факторинговой компанией.</p>
                         <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
+                        <h6>11.03.2014</h6>
                     </div>
                     <div class="comment-item">
                         <img class="face" src="./assets/img/FOTOTECA.jpg">
@@ -193,22 +192,38 @@
                         <h5>Директор ТОО "Fototeca"</h5>
                         <p>Благодарим компанию «DevCloud Solutions» за профессионализм, оперативность и отзывчивость. Разработана очень удобная система приема и обработки заказов, с ней реально высвобождается огромное количество ресурсов. Особая благодарность Светлане Зенько, очень приятно с Вами работать.</p>
                         <img class="stars" src="./assets/img/Звезды.png">
-                        <h6>21.06.20</h6>
+                        <h6>25.10.2017</h6>
+                    </div>
+                    <div class="comment-item">
+                        <img class="face" style="border-radius: 0px;" src="./assets/img/лого (2).jpg">
+                        <h3>ОЛЕГ МЕРКЕР</h3>
+                        <h5>Руководитель тендерного департамента, ТОО «Абди Ибрахим Глобал Фарм»</h5>
+                        <p>Приложение очень удобное для ведения дневника приема лекарств. Очень важный момент, что данное приложение очень просто в использовании -«use-friendly» и даже пожилым пользователям все понятно и удобно. Большое спасибо всей команде за успешно реализованной проект!</p>
+                        <img class="stars" src="./assets/img/Звезды.png">
+                        <h6>27.04.2022</h6>
+                    </div>
+                    <div class="comment-item">
+                        <img class="face" style="border-radius: 0px;" src="./assets/img/Такси.png">
+                        <h3>СЕЙТБЕК У.А.</h3>
+                        <h5>Директор ТОО «Astana park»</h5>
+                        <p>Отличный сервис, быстрая реакция на решение задач, рады сотрудничать.</p>
+                        <img class="stars" src="./assets/img/Звезды.png">
+                        <h6>20.05.2022</h6>
                     </div>
                 </div>
             </div>
-            <form class="mail" action="#" method="post" id="sendform" enctype="multipart/form-data">
-                <fieldset>
-                    <h1>Есть вопросы? Задавайте!</h1>
-                    <input id="firstInput"placeholder="Имя" name="name" value="" type="text" class="required">
-                    <input type="text"  placeholder="E-mail" name="email" value="" size="40" type="email">
-                    <input id="lastInput" placeholder="Телефон" name="tel" value="" size="40" class="required" type="tel">
+            <form class="mail" enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
+                <h1 class="mail-massage">Есть вопросы? Задавайте!</h1>
+                <div class="mail-inputs">
+                    <input id="firstInput"placeholder="Имя" name="name" type="text" class="required" required>
+                    <input  placeholder="E-mail" name="email" type="email">
+                    <input id="lastInput" placeholder="Телефон" name="phone"  class="required" type="tel" required>
                     <div class="textArea">
-                        <textarea placeholder="Напишите своё сообщение..." name="message"></textarea>
-                        <input class="telegram"  value="" name="sendMail" type="submit"/>
-                        <input class="add custom-file-input"  name="file" value="" type="file" />
+                        <textarea placeholder="Напишите своё сообщение..." name="text"></textarea>
+                        <input class="telegram" type="submit"/>
+                        <input class="add custom-file-input"  type="file" name="myfile[]" multiple id="myfile"/>
                     </div>
-                </fieldset>
+                </div>
             </form>
         </div>
     </div>
@@ -228,10 +243,10 @@
                 </div>
             </div>
             <div class="column column2">
-                <p>​<img src="./assets/img/icons8-телефон-96 (1) 1.png" class="columnIcon" style="top: 20px;">+7 (727) 334-21-45​</p>
-                <p>+7 (707) 998-93-90</p>
+                <p>​<img src="./assets/img/icons8-телефон-96 (1) 1.png" class="columnIcon" style="top: 20px;">+7 (777) 166-11-44​</p>
+                <p>+7 (727) 344-93-90</p>
                 <p>​<img src="./assets/img/icons8-почта-100 1.png" class="columnIcon">info@devcloud.kz</p>
-                <p><img src="./assets/img/icons8-whatsapp 1.png" class="columnIcon">Whatsapp <img src="./assets/img/icons8-телеграмма-app (2) 1.png" class="columnIcon" style="left: 80px;">        Telegram</p>
+                <p><img src="./assets/img/icons8-whatsapp 1.png" class="columnIcon"><a href="https://wa.me/77771661144" target="_blank">Whatsapp </a> <a href="https://t.me/DevCloudSolutions" target="_blank"><span><img src="./assets/img/icons8-телеграмма-app (2) 1.png" style="height: 20px; margin-left: 10px;"> </span>    Telegram</a></p>
             </div>
             <div class="column column3">
                 <a href="./index.html"><p>Главная</p></a>
@@ -244,14 +259,53 @@
                 <a href="./contacts.html"><p>Контакты</p></a>
             </div>
             <div class="column">
-                <a href="#home"><img class="columnArrow" src="./assets/img/Arrow.png"></a>
+                <a href="#portfolio"><img class="columnArrow" src="./assets/img/Arrow.png"></a>
             </div>
         </div>
         <span class="lastTitle">© Devcloud Solutions, Inc. 2021. We love our users!</span>
     </footer>
 
+
+
+
+
+
+
+
+
+
     <script>
-        // Call();
+        
+        function send(event, php) {
+            console.log("Отправка запроса");
+            event.preventDefault ? event.preventDefault() : event.returnValue = false;
+            var req = new XMLHttpRequest();
+            req.open('POST', php, true);
+            req.onload = function () {
+                var mas = document.getElementsByClassName('mail-massage')
+                var mail = document.getElementsByClassName('mail-inputs')
+                if (req.status >= 200 && req.status < 400) {
+                    json = JSON.parse(this.response); // Ебанный internet explorer 11
+                    console.log(json);
+
+                    // ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
+                    if (json.result == "success") {
+                        // Если сообщение отправлено
+                        // alert("Сообщение отправлено");
+                        mail[0].classList.add('mail-none')
+                        mas[0].innerHTML = "Сообщение отправлено"
+                    } else {
+                        // Если произошла ошибка
+                        alert("Ошибка. Сообщение не отправлено");
+                    }
+                    // Если не удалось связаться с php файлом
+                } else { alert("Ошибка сервера. Номер: " + req.status); }
+            };
+
+            // Если не удалось отправить запрос. Стоит блок на хостинге
+            req.onerror = function () { alert("Ошибка отправки запроса"); };
+            req.send(new FormData(event.target));
+        }
     </script>
 </body>
 

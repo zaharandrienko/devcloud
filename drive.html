@@ -5,189 +5,337 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devcloud</title>
+    <title>DEVCLOUD SOLUTIONS</title>
+    <link rel="icon" href="./assets2/лого.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./services.css">
-    <link rel="stylesheet" href="./work.css">
-    <link rel="stylesheet" href="./tablet.css">
-    <script src="./main.js"></script>
+    <script src="./main2.js"></script>
+    <link rel="stylesheet" href="./style2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
+    <script>
+        window.onload = function () {
+            Back();
+        };
+    </script>
 </head>
 
 <body>
-    <header class="toolbar scroll">
-        <img class="toolbarLogo" src="./assets/img/Frame 44 (1).png" />
-        <span class="toolbarLogo">DEVCLOUD SOLUTIONS</span>
-        <div class="stack" onclick="Menu()">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+    <header id="Menu">
+        <div class="container">
+            <div class="logo">
+                <a href="#main"><img src="./assets2/Big logo.png"></a>
+            </div>
+            <div class="stack" onclick="Menu()">
+                <div class="stack-item stack-item1"></div>
+                <div class="stack-item stack-item2"></div>
+                <div class="stack-item stack-item3"></div>
+            </div>
+            <nav id="Nav" class="adaptive-nav" onclick="MenuOFF()">
+                <li class="linePush1"><a href="#about" class="lang-menu1">О приложении</a></li>
+                <li class="linePush3"><a href="#modules" class="lang-menu2">Модули</a></li>
+                <li class="linePush4"><a href="#tech" class="lang-menu3">Технологии</a></li>
+                <li class="linePush4"><a href="#work" class="lang-menu4">Решение</a></li>
+                <li class="linePush4"><a href="#format" class="lang-menu4">Контакты</a></li>
+                <a href="#format"><button class="main-button">Связаться</button></a>
+            </nav>
         </div>
-        <ul class="menu">
-            <li><a href="./index.html">Главная</a></li>
-            <li onclick="DownMenuActive()" style="cursor: pointer;">
-                <img src="./assets/img/Vector 30.png" class="downArr" style="width: 14px; height: 7px;">Услуги</a>
-                <div class="downMenu">
-                    <div class="downText">
-                        <h1>Наши услуги</h1>
-                        <hr>
-                        <a href="./servicesMobile.html">
-                            <h3>Мобильные приложения</h3>
-                        </a>
-                        <a href="./servicesWeb.html">
-                            <h3>Веб приложения</h3>
-                        </a>
-                    </div>
-                    <img src="./assets/img/pngwing 2.png">
-                </div>
-            </li>
-            <li><a href="./work.html">Как мы работаем</a></li>
-            <li><a href="./portfolio.html">Портфолио</a></li>
-            <li><a href="./about.html"> О нас</a></li>
-            <li><a href="./contacts.html"> Контакты</a></li>
-        </ul>
     </header>
 
 
 
-    <div class="container">
-        <div class="aboutAbout">
-            <h3 class="adaptiveTitle">Мобильное приложение для водителей</h3>
-            <img src="./assets/img/Frame 77.png">
-            <div class="aboutText">
-                <h3>Мобильное приложение для водителей</h3>
-                <p>Мобильное приложение для водителей позволяет держать свой баланс под полным контролем и снять деньги
-                    в любое удобное время. Основная задача моментальный вывод денег с баланса профиля водителя, на
-                    банковскую карточку водителя.</p>
-                <a href="#Form"><button>Связаться с нами</button></a>
+    <section class="main" id="main">
+        <div class="container">
+            <div class="main-text">
+                <h1 class="title-large">Приложение для водителей Android и iOS</h1>
+                <p>Devcloud Solutions разработает систему мобильных приложений Android и iOS для водителей, которая
+                    позволит держать свой баланс под полным контролем и снять деньги в любое удобное время</p>
+            </div>
+            <div class="networks">
+                <div class="network">
+                    <a href="https://apps.apple.com/kz/app/astana-park-pro/id1609180675" target="_blank"><img
+                            src="./assets2/app store apple.png" class="network1"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.Astana_park.ydex_pro"
+                        target="_blank"><img src="./assets2/google.png"></a>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="container">
-        <div class="containerBlack containerBlackLeft" style="margin-bottom: 0;">
-            <div class="block"></div>
-            <div class="blackText">
-                <h1>Технологии</h1>
-                <h3>ASP.net, C #, MVC, Microsoft SQL server, Java</h3>
+        <div class="main-back">
+            <div class="main-back-container">
+                <img src="./assets2/Frame 1359.png" class="back-item1">
+                <img src="./assets2/Frame 1360.png" class="back-item2">
+                <img src="./assets2/Frame 1361.png" class="back-item3">
             </div>
         </div>
-    </div>
+        <img src="./assets2/Linked Path Group.png" class="rota">
+    </section>
 
-    <div class="container">
-        <div class="displays">
-            <img src="./assets/img/IMG_0847.png" alt="" class="display">
-            <img src="./assets/img/IMG_0848.png" alt="" class="display">
-            <img src="./assets/img/IMG_0852.png" alt="" class="display">
-            <img src="./assets/img/IMG_0853.png" alt="" class="display">
-        </div>
-    </div>
 
-    <div class="container">
-        <h1 class="title">Ключевые модули приложения:</h1>
-        <div class="aboutAbout aboutAbout2">
-            <div class="aboutText aboutText2">
-                <p class="main-line"><span></span>Авторизация, Регистрация, Смена пароля</p>
-                <p class="main-line"><span></span>Подтверждение СМС, Пин-код для дальнейшего входа</p>
-                <p class="main-line"><span></span>Главная страница с данными профиля и балансом, а также возможность выбора карты и указания суммы перевода</p>
-                <p class="main-line"><span></span>История переводов</p>
-            </div>
-            <img src="./assets/img/Frame 44app.png">
-        </div>
-    </div>
 
-    <div class="container">
-        <div class="containerBlack containerBlackLeft" style="margin-bottom: 0;">
-            <div class="block"></div>
-            <div class="blackText">
-                <h1>результат</h1>
-                <h3>1. Быстрый вывод денег из таксопарка на карту.
-                    Укажите свои банковские реквизиты в мобильном приложении и получайте быстрые выплаты прямо на карту.
-                    Мы предоставляем возможность вывода денег с яндекс такс</h3>
-                <h3>2.	При добавление карты есть валидация карты через сервис (валиден ли номер карты). Можно выбирать или удалять карты.
-                </h3>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="containerBlack containerBlackRight containerBlackLast">
-            <div class="block blockPhoto" style="background-image: url(./assets/img/Такси.png);"></div>
-            <div class="blackText">
-                <h1>Сейтбек У.А.
-                </h1>
-                <h5>Директор ТОО «Astana park»
-                </h5>
-                <p>Отличный сервис, быстрая реакция на решение задач, рады сотрудничать
+    <section class="about">
+        <div id="about"></div>
+        <div class="container">
+            <h1 class="title-small">Приложение сделает вывод денег с баланса профиля водителя яндекса, на банковскую
+                карточку водителя быстрее, удобнее и увеличит клиентский поток</h1>
+            <div class="about-text">
+                <p>Характеристика сервиса. Сервис состоит из модулей — Сервер API и Базы данных</p>
+                <p>Мобильное приложение построена на технологии Flutter, административная часть системы построена на
+                    мгновенно работающей технологии Vue.JS</p>
+                <p>Реализована административная панель для Директора подключившегося таксопарка, Менеджера, Бухгалтера
                 </p>
             </div>
         </div>
-    </div>
+    </section>
 
 
-    <div class="form" id="Form">
-        <div class="containerForm">
-            <div class="comment" style="background-image: url(./assets/img/image\ 44.jpg);background-size:cover;background-position: center;">
+
+    <section class="screens">
+        <div id="screens"></div>
+        <div class="container">
+            <img class="screen1" src="./assets2/mob.png">
+            <img class="screen2" src="./assets2/Mob (1).png">
+            <img class="screen3" src="./assets2/mob (2).png">
+        </div>
+    </section>
+
+
+
+    <section class="modules">
+        <div id="modules"></div>
+        <div class="container">
+            <h1 class="title-small">Ключевые модули приложения</h1>
+            <ul class="modules-text">
+                <li onclick="Modul(0)">
+                    <p>Авторизация, Регистрация, <br class="adaptive-n0ne"> Смена пароля <span class="plus"></span></p>
+                    <img src="./assets2/1. Авторизация, Регистрация, Смена пароля..jpg" class="img-hover img-hover1">
+                </li>
+                <li onclick="Modul(1)">
+                    <p>Подтверждение СМС, Пин-код для <br class="adaptive-n0ne"> дальнейшего входа <span
+                            class="plus"></span></p> <img
+                        src="./assets2/2. Подтверждение СМС, Пин-код для дальнейшего входа..jpg"
+                        class="img-hover img-hover2">
+                </li>
+                <li onclick="Modul(2)">
+                    <p>Главная страница с данными профиля и <br class="adaptive-n0ne"> балансом, возможность выбора
+                        карты и <br class="adaptive-n0ne"> указания
+                        суммы
+                        перевода <span class="plus"></span></p> <img
+                        src="./assets2/3. Главная страница с данными профиля и балансом, а также возможность выбора карты и указания суммы перевода..jpg"
+                        class="img-hover img-hover3">
+                </li>
+                <li onclick="Modul(3)">
+                    <p>История переводов <span class="plus"></span></p><img src="./assets2/4. История переводов..jpg"
+                        class="img-hover img-hover4">
+                </li>
+                <li onclick="Modul(4)">
+                    <p>Новости <span class="plus"></span></p> <img src="./assets2/5. Новости.jpg"
+                        class="img-hover img-hover5">
+                </li>
+                <li onclick="Modul(5)">
+                    <p>Настройки <span class="plus"></span></p> <img src="./assets2/6. Настройки.jpg"
+                        class="img-hover img-hover6">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <section class="runners">
+        <div class="runner-left">
+            <h1 class="run1">Devcloud Solutions разработает систему мобильных приложений Android и iOS для водителей
+            </h1>
+        </div>
+        <div class="runner-right">
+            <h1 class="run2">Приложение сделает вывод денег с баланса профиля водителя яндекса, на банковскую карточку
+                водителя
+                быстрее, удобнее и увеличит клиентский поток</h1>
+        </div>
+    </section>
+
+
+
+    <section class="tech">
+        <div id="tech"></div>
+        <div class="container">
+            <h1 class="title-small">Технологии</h1>
+            <div class="tech-content">
+                <div class="tech-item tech-item1">ASP.Net Core</div>
+                <div class="tech-item tech-item2">C#</div>
+                <div class="tech-item tech-item3">MS SQL</div>
+                <div class="tech-item tech-item4">Flutter</div>
+                <div></div>
+                <div></div>
+                <div class="tech-item tech-item5">Dart</div>
+                <div class="tech-item tech-item6">Firebase</div>
+                <div class="tech-item tech-item7">Vue.JS</div>
+                <div class="tech-item tech-item8">DevExtreme</div>
             </div>
-            <form class="mail" action="#" method="post" id="sendform" enctype="multipart/form-data">
-                <fieldset>
-                    <h1>Есть вопросы? Задавайте!</h1>
-                    <input id="firstInput"placeholder="Имя" name="name" value="" type="text" class="required">
-                    <input type="text"  placeholder="E-mail" name="email" value="" size="40" type="email">
-                    <input id="lastInput" placeholder="Телефон" name="tel" value="" size="40" class="required" type="tel">
-                    <div class="textArea">
-                        <textarea placeholder="Напишите своё сообщение..." name="message"></textarea>
-                        <input class="telegram"  value="" name="sendMail" type="submit"/>
-                        <input class="add custom-file-input"  name="file" value="" type="file" />
+        </div>
+    </section>
+
+
+
+    <section class="work">
+        <div id="work"></div>
+        <div class="container">
+            <div class="work-content">
+                <div class="work-img"></div>
+                <div class="work-text">
+                    <h1 class="title-small">У нас есть "готовое решение" мобильного приложения для моментального вывода
+                        средств с баланса водителя на банковскую карточку. Что в него входит?</h1>
+                    <h2>Сроки интеграции "готового решения" от 4 недель</h2>
+                    <div class="stages">
+                        <div class="stage">
+                            <h3>Разработка</h3>
+                            <p>Мобильное приложение на Android и IOS для водителя. Серверная часть и административная
+                                панель</p>
+                        </div>
+                        <div class="stage">
+                            <h3>Персонализация</h3>
+                            <p>По желанию Заказчика приложения состав модулей может быть изменен или доработан</p>
+                        </div>
+                        <div class="stage">
+                            <h3>Дизайн</h3>
+                            <p>Легкий редизайн (смена цветовой гаммы, установка Вашего лого и т.д.)</p>
+                        </div>
+                        <div class="stage">
+                            <h3>Бонусы</h3>
+                            <p>Мы выполним любые доработки проекта по вашему усмотрению</p>
+                        </div>
                     </div>
-                </fieldset>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="form">
+        <div id="format"></div>
+        <div class="container-form">
+            <footer>
+                <div class="footer-content">
+                    <img src="./assets2/Big logo.png">
+                    <div class="contacts">
+                        <div class="contact contact1">
+                            <h2>Контакты</h2>
+                            <p>Алматы, Жамбыла 111</p>
+                            <p>info@devcloud.kz</p>
+                        </div>
+                        <div class="contact contact2">
+                            <h2>Соцсети</h2>
+                            <a href="https://wa.me/77771661144" target="_blank">
+                                <p class="contact-link">Whatsapp</p>
+                            </a>
+                            <a href="https://t.me/DevCloudSolutions" target="_blank">
+                                <p class="contact-link">Тelegram</p>
+                            </a>
+                        </div>
+                        <div class="contact contact3">
+                            <h3>+7 (777) 166-11-44</h3>
+                            <h3>+7 (727) 344-93-90</h3>
+                        </div>
+                        <div class="contact contact-active">
+                            <a href="#main"><img src="./assets2/Arrow.png"></a>
+                            <a href="#main"><img class="arrov" src="./assets2/Arrow-1.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <form class="mail" enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
+                <h1 class="mail-massage">Для нас важно удовлетворить дополнительные предпочтения Клиента</h1>
+                <div class="mail-inputs">
+                    <input class="mail-input first-input name" name="name" type="text" placeholder="ИМЯ" required>
+                    <input class="mail-input phone" name="phone" type="tel" placeholder="ТЕЛЕФОН" required>
+                    <input class="mail-input" name="email" type="email" placeholder="E-MAIL">
+                    <button class="main-button main-button-blue send-form lang-form4" type="submit">Связаться</button>
+                </div>
             </form>
         </div>
-    </div>
+    </section>
 
-    <footer class="footer">
-        <div class="containerFooter">
-            <div class="column firstColumn">
-            </div>
-            <div class="column column1">
-                <div class="logoFooter">
-                    <img src="./assets/img/Frame 44 (1).png" />
-                    <h3 class="logoTitle">DEVCLOUD SOLUTIONS</h3>
-                </div>
-                <div class="logoFooter bot">
-                    <div class="spase"></div>
-                    <p>Алматы, Жамбыла 111</p>
-                </div>
-            </div>
-            <div class="column column2">
-                <p>​<img src="./assets/img/icons8-телефон-96 (1) 1.png" class="columnIcon" style="top: 20px;">+7 (727) 334-21-45​</p>
-                <p>+7 (707) 998-93-90</p>
-                <p>​<img src="./assets/img/icons8-почта-100 1.png" class="columnIcon">info@devcloud.kz</p>
-                <p><img src="./assets/img/icons8-whatsapp 1.png" class="columnIcon">Whatsapp <img src="./assets/img/icons8-телеграмма-app (2) 1.png" class="columnIcon" style="left: 80px;">        Telegram</p>
-            </div>
-            <div class="column column3">
-                <a href="./index.html"><p>Главная</p></a>
-                <a href="./portfolio.html"><p>Портфолио</p></a>
-                <a href="./servicesMobile.html"><p>Услуги</p></a>
-            </div>
-            <div class="column column4">
-                <a href="./work.html"><p>Процессы</p></a>
-                <a href="./about.html"><p>О компании</p></a>
-                <a href="./contacts.html"><p>Контакты</p></a>
-            </div>
-            <div class="column">
-                <a href="#home"><img class="columnArrow" src="./assets/img/Arrow.png"></a>
-            </div>
-        </div>
-        <span class="lastTitle">© Devcloud Solutions, Inc. 2021. We love our users!</span>
-    </footer>
+
 
     <script>
-        // Call();
+        window.addEventListener('scroll', function () {
+            var toolbarBack = document.getElementsByClassName("logo");
+            var nav = document.getElementsByClassName('adaptive-nav');
+            if (pageYOffset > 1) {
+                toolbarBack[0].classList.add('scroll');
+                nav[0].classList.add('scroll');
+            }
+            if (pageYOffset < 1) {
+                toolbarBack[0].classList.remove('scroll');
+                nav[0].classList.remove('scroll');
+            }
+        });
+
+        $(function () {
+            $('.run1').marquee({
+                duration: 9000,
+                startVisible: true,
+                duplicated: true
+            });
+        });
+
+        $(function () {
+            $('.run2').marquee({
+                duration: 11000,
+                startVisible: true,
+                duplicated: true
+            });
+        });
+        $(window).scroll(function () {
+            var hT = $('#screens').offset().top,
+                hH = $('#screens').outerHeight(),
+                wH = $(window).height(),
+                wS = $(this).scrollTop();
+            if (wS > (hT + hH - wH)) {
+                console.log('H1 on the view!');
+                $(".screen1").addClass("screen1-active");
+                $(".screen3").addClass("screen3-active");
+            }
+            else {
+                $(".screen1").removeClass("screen1-active");
+                $(".screen3").removeClass("screen3-active");
+            }
+        });
+
+        function send(event, php) {
+            console.log("Отправка запроса");
+            event.preventDefault ? event.preventDefault() : event.returnValue = false;
+            var req = new XMLHttpRequest();
+            req.open('POST', php, true);
+            req.onload = function () {
+                var mas = document.getElementsByClassName('mail-massage')
+                var mail = document.getElementsByClassName('mail-inputs')
+                if (req.status >= 200 && req.status < 400) {
+                    json = JSON.parse(this.response); // Ебанный internet explorer 11
+                    console.log(json);
+
+                    // ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
+                    if (json.result == "success") {
+                        // Если сообщение отправлено
+                        // alert("Сообщение отправлено");
+                        mail[0].classList.add('mail-none')
+                        mas[0].innerHTML = "Сообщение отправлено"
+                    } else {
+                        // Если произошла ошибка
+                        alert("Ошибка. Сообщение не отправлено");
+                    }
+                    // Если не удалось связаться с php файлом
+                } else { alert("Ошибка сервера. Номер: " + req.status); }
+            };
+
+            // Если не удалось отправить запрос. Стоит блок на хостинге
+            req.onerror = function () { alert("Ошибка отправки запроса"); };
+            req.send(new FormData(event.target));
+        }
+
+
     </script>
 </body>
 

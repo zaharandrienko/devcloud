@@ -146,5 +146,8 @@ button:hover{
         padding: 0;
         padding-bottom: 0px;
     }
+    .lust-case{
+        bottom: -120px !important;
+    }
 }
 

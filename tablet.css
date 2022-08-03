@@ -58,8 +58,155 @@
     font-size: 16px;
 }
 
+.aboutAboutc{
+    float: left;
+}
+.aboutAbout-circul{
+    position: relative;
+    padding-bottom: 100px;
+    height: 400px;
+}
+.table-circul{
+    position: absolute;
+    height: 600px;
+    width: 700px;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.table-circul-container{
+    position: relative;
+    width: 600px;
+    height: 500px;
+
+}
+.center{
+    width: 20%;
+    position: absolute;
+    top: 180px;
+    left: 250px;
+    transform: rotate(0deg);
+    transition: 0ms;
+}
+.center-active{
+    transform: rotate(360deg);
+    transition: 5400ms;
+}
+.center-item1{
+    position: absolute;
+    width: 250px;
+    right: 0;
+    bottom: 100px;
+    transition: 2000ms;
+}
+.center-item2{
+    position: absolute;
+    width: 80px;
+    left: 100px;
+    bottom: 100px;
+    transition: 2000ms;
+}
+.center-item3{
+    position: absolute;
+    width: 200px;
+    right: 200px;
+    top: -40px;
+    transition: 2000ms;
+}
+.center-item11{
+    right: -80px;
+    bottom: 220px;
+    transition: 2000ms;
+}
+.center-item21{
+    left: 250px;
+    bottom: 30px;
+    transition: 2000ms;
+}
+.center-item31{
+    right: 400px;
+    top: 20px;
+    transition: 2000ms;
+}
+.center-item12{
+    right: 100px;
+    bottom: 350px;
+    transition: 2000ms;
+}
+.center-item22{
+    left: 390px;
+    bottom: 80px;
+    transition: 2000ms;
+}
+.center-item32{
+    right: 380px;
+    top: 270px;
+    transition: 2000ms;
+}
+.center-item13{
+    right: 390px;
+    bottom: 270px;
+    transition: 2000ms;
+}
+.center-item23{
+    left: 450px;
+    bottom: 230px;
+    transition: 2000ms;
+}
+.center-item33{
+    right: 310px;
+    top: 340px;
+    transition: 2000ms;
+}
+.center-item14{
+    right: 370px;
+    bottom: 150px;
+    transition: 2000ms;
+}
+.center-item24{
+    left: 260px;
+    bottom: 390px;
+    transition: 2000ms;
+}
+.center-item34{
+    right: 50px;
+    top: 320px;
+    transition: 2000ms;
+}
+.center-item15{
+    right: 250px;
+    bottom: 70px;
+    transition: 2000ms;
+}
+.center-item25{
+    left: 100px;
+    bottom: 250px;
+    transition: 2000ms;
+}
+.center-item35{
+    right: -50px;
+    top: 130px;
+    transition: 2000ms;
+}
+
+
+
+
 
 @media screen and (max-width: 1100px){
+    .table-circul{
+        width: 100%;
+    }
+    .table-circul{
+        position: static;
+    }
+    .table-circul-container{
+        margin: 0 auto;
+    }
+    .aboutAbout-circul{
+        padding-bottom: 0;
+        height: auto;
+    }
     button{
         padding-left: 0;
         padding-right: 0;
@@ -128,4 +275,13 @@
         width: 100%;
         font-size: 14px;
     } 
+    .table-circul{
+        position: absolute;
+        left: -310px;
+        top: auto;
+        bottom: -100px !important;
+    }
+    .aboutAbout-circul{
+        padding-bottom: 500px;
+    }
 }

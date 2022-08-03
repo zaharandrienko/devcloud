@@ -108,9 +108,107 @@
 
 
 
+.lap-slide{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 100px 0;
+}
+.lap{
+    width: 40%;
+    padding: 5.5%;
+    padding-top: 3.7%;
+    position: absolute;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./assets/img/lap.png);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);;
+}
+.lap-img1{
+    width: 0%;
+}
+.lap-img2{
+    width: 0%;
+}
+.lap-img3{
+    width: 0%;
+}
+.lap-img-active1{
+    width: 80%;
+    margin-left: 10%;
+}
+.lap-img-active2{
+    position: absolute;
+    width: 40%;
+    top: 45%;
+    transform: translate(0%, -50%);;
+    left: -30%;
+}
+.lap-img-active3{
+    position: absolute;
+    width: 40%;
+    top: 45%;
+    transform: translate(0%, -50%);;
+    right: -30%;
+}
+.arrow-white1{
+    position: absolute;
+    bottom: 120px;
+    left: 10%;
+    width: 60px;
+    height: 15px;
+    background-image: url(./assets/img/arrow-w.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translate(-50%, 0%);;
+    cursor: pointer;
+}
+.arrow-white2{
+    position: absolute;
+    bottom: 120px;
+    right: 10%;
+    width: 60px;
+    height: 15px;
+    background-image: url(./assets/img/arrow-w.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translate(-50%, 0%);;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.controlz{
+    height: 33px;
+    width: 80px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.controlz-item{
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    margin-top: 7px;
+    border-radius: 50%;
+    background-color: rgb(163, 203, 203);
+    transition: 400ms;
+}
+.controlz-item-active{
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+    background-color: darkslategray;
+    transition: 400ms;
+}
+
 @media screen and (max-width: 1100px){
     .aboutAbout{
         margin-top: 150px;
+    }
+    .controlz{
+        width: 90px;
     }
     .aboutAbout img{
         width: 100%;
@@ -206,5 +304,17 @@
     } 
     .main-line span{
         top: 0px;
+    }
+    .lap-slide{
+        width: 180%;
+        margin-left: -40%;
+    }
+    .arrow-white1{
+        left: 27%;
+        bottom: 110px;
+    }
+    .arrow-white2{
+        right: 25%;
+        bottom: 110px;
     }
 }
